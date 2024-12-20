@@ -14,8 +14,7 @@ show_drafts: false
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: assets/images/icons/siteicon.png
-description: One API. Much CTI. The Most Important Cyber Threat Intelligence Knowledgebases Accessible via a Single API.
-beta_signup_link: 
+description: One API. Much CTI. The most important cyber threat intelligence knowledgebases accessible via a single API.
 author:
   name: DOGESEC
 twitter:
