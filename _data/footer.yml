@@ -1,10 +1,10 @@
 - links:
-  - name: Pricing
-    link: /pricing
   - name: GitHub
     link: https://github.com/muchdogesec/ctibutler/
 
 - links:
+  - name: Pricing
+    link: /pricing
   - name: Sign In
     link: https://app.ctibutler.com
   - name: Sign Up

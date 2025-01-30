@@ -16,7 +16,7 @@ show_drafts: false
 logo: assets/images/icons/siteicon.png
 description: One API. Much CTI. The most important cyber threat intelligence knowledgebases accessible via a single API.
 author:
-  name: DOGESEC
+  name: dogesec
 twitter:
     username: 
     card: summary
