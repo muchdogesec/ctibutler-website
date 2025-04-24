@@ -12,6 +12,8 @@
 		<link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/monokai.min.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
 
 		{% include favicon.html %}
 		
@@ -64,11 +66,19 @@
 				<p class="copyright"><a href="https://www.linkedin.com/company/dogesec" target="_blank">LinkedIn</a> | <a href="https://github.com/muchdogesec/" target="_blank">GitHub</a> | <a href="https://www.youtube.com/@muchdogesec" target="_blank">YouTube</a>
 			</div>
 		</footer>
-
+		<script>
+			document.getElementById("open-nav").onclick = function () {
+				document.body.classList.toggle("nav-open");
+				return false;
+			};
+		</script>
 		<script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
 		<script src="/assets/js/popper.min.js"></script>
 		<script src="/assets/js/bootstrap.min.js"></script>
 		<script src="/assets/js/cookieconsent.min.js"></script>
+		<script src="/assets/js/highlight.min.js"></script>
+    	<script src="/assets/js/highlightjs-line-numbers.js"></script>
+    	<script src="/assets/js/stixview.bundle.js"></script> 
 
 	</body>
 </html>
