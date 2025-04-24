@@ -29,8 +29,14 @@ social:
   links:
     - 
     
+    
 # -----
 # Build
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
 
 timezone: "Europe/London"
 
@@ -40,7 +46,7 @@ collections:
 
 paginate: 10
 paginate_path: "/blog/:num/"
-permalink: "/blog/:year/:title/"
+permalink: "/blog/:title/"
 
 defaults:
   -
@@ -88,12 +94,20 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-redirect-from
 
 exclude:
+  - .gitignore
   - Gemfile
   - Gemfile.lock
+  - vendor
   - README.md
+  - tmp
   - LICENCE
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - node_modules
 
 # -----------
 # CloudCannon
@@ -101,7 +115,7 @@ exclude:
 # social_icons:
 #   - Instagram
 #   - Facebook
-  - Twitter
+#   - Twitter
   - RSS
 
 # -----
