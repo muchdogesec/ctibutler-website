@@ -543,7 +543,7 @@ Returns 5 results in v4.7.0.
 
 ### ATLAS object `Sub-Technique` = STIX object `attack-pattern`
 
-ATLAS Sub-Techniques (`attack-pattern` with [STIX Custom Property](/blog/create_custom_stix_objects/) `"x_mitre_is_subtechnique": true`) are a more specific implementation of a Technique (they are children to a parent).
+ATLAS Sub-Techniques (`attack-pattern` with [STIX Custom Property](https://www.dogesec.com/blog/create_custom_stix_objects/) `"x_mitre_is_subtechnique": true`) are a more specific implementation of a Technique (they are children to a parent).
 
 Sub-technique have IDs in the format: `AML.TNNNN.NNN`
 
