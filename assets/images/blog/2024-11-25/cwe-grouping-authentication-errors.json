@@ -1,0 +1,1204 @@
+{
+    "type": "bundle",
+    "id": "bundle--d45c6953-4fe3-409f-9e11-e564c3c40816",
+    "objects": [
+      {
+        "common_consequences": [
+          "Access Control"
+        ],
+        "created": "2006-07-19T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "The product performs authentication based on the name of a resource being accessed, or the name of the actor performing the access, but it does not properly check all possible names for that resource or actor. None",
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/289.html",
+            "external_id": "CWE-289"
+          },
+          {
+            "source_name": "PLOVER",
+            "description": "Authentication bypass by alternate name"
+          },
+          {
+            "source_name": "The CERT Oracle Secure Coding Standard for Java (2011)",
+            "description": "Normalize strings before validating them",
+            "external_id": "IDS01-J"
+          },
+          {
+            "source_name": "SEI CERT Oracle Coding Standard for Java",
+            "description": "Normalize strings before validating them",
+            "external_id": "IDS01-J"
+          }
+        ],
+        "id": "weakness--c454ae8e-2b5b-5a67-b664-6b06168577d5",
+        "modes_of_introduction": [
+          "Architecture and Design",
+          "Implementation"
+        ],
+        "modified": "2023-06-29T00:00:00.000Z",
+        "name": "Authentication Bypass by Alternate Name",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Access Control"
+        ],
+        "created": "2006-07-19T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "This attack-focused weakness is caused by incorrectly implemented authentication schemes that are subject to spoofing attacks. None",
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/290.html",
+            "external_id": "CWE-290"
+          },
+          {
+            "source_name": "Mark Dowd, John McDonald, Justin Schuh",
+            "description": "The Art of Software Security Assessment",
+            "external_id": "REF-62"
+          },
+          {
+            "source_name": "PLOVER",
+            "description": "Authentication bypass by spoofing"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/21.html",
+            "external_id": "CAPEC-21"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/22.html",
+            "external_id": "CAPEC-22"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/459.html",
+            "external_id": "CAPEC-459"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/461.html",
+            "external_id": "CAPEC-461"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/473.html",
+            "external_id": "CAPEC-473"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/476.html",
+            "external_id": "CAPEC-476"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/59.html",
+            "external_id": "CAPEC-59"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/60.html",
+            "external_id": "CAPEC-60"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/667.html",
+            "external_id": "CAPEC-667"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/94.html",
+            "external_id": "CAPEC-94"
+          }
+        ],
+        "id": "weakness--807b79f2-45de-5261-85e4-2c528ae8c582",
+        "modes_of_introduction": [
+          "Implementation"
+        ],
+        "modified": "2023-10-26T00:00:00.000Z",
+        "name": "Authentication Bypass by Spoofing",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Access Control"
+        ],
+        "created": "2006-07-19T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "A capture-replay flaw exists when the design of the product makes it possible for a malicious user to sniff network traffic and bypass authentication by replaying it to the server in question to the same effect as the original message (or with minor changes). Capture-replay attacks are common and can be difficult to defeat without cryptography. They are a subset of network injection attacks that rely on observing previously-sent valid commands, then changing them slightly if necessary and resending the same commands to the server.",
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/294.html",
+            "external_id": "CWE-294"
+          },
+          {
+            "source_name": "Secure Software, Inc.",
+            "description": "The CLASP Application Security Process",
+            "url": "https://cwe.mitre.org/documents/sources/TheCLASPApplicationSecurityProcess.pdf",
+            "external_id": "REF-18"
+          },
+          {
+            "source_name": "PLOVER",
+            "description": "Authentication bypass by replay"
+          },
+          {
+            "source_name": "CLASP",
+            "description": "Capture-replay"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/102.html",
+            "external_id": "CAPEC-102"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/509.html",
+            "external_id": "CAPEC-509"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/555.html",
+            "external_id": "CAPEC-555"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/561.html",
+            "external_id": "CAPEC-561"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/60.html",
+            "external_id": "CAPEC-60"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/644.html",
+            "external_id": "CAPEC-644"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/645.html",
+            "external_id": "CAPEC-645"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/652.html",
+            "external_id": "CAPEC-652"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/701.html",
+            "external_id": "CAPEC-701"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/94.html",
+            "external_id": "CAPEC-94"
+          }
+        ],
+        "id": "weakness--4da96b29-dad0-5aa1-bb88-84b5a723b7c8",
+        "likelihood_of_exploit": [
+          "High"
+        ],
+        "modes_of_introduction": [
+          "Architecture and Design"
+        ],
+        "modified": "2023-06-29T00:00:00.000Z",
+        "name": "Authentication Bypass by Capture-replay",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Integrity",
+          "Authentication"
+        ],
+        "created": "2006-07-19T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "The product does not validate, or incorrectly validates, a certificate. When a certificate is invalid or malicious, it might allow an attacker to spoof a trusted entity by interfering in the communication path between the host and client. The product might connect to a malicious host while believing it is a trusted host, or the product might be deceived into accepting spoofed data that appears to originate from a trusted host.",
+        "detection_methods": [
+          "Automated Static Analysis - Binary or Bytecode",
+          "Manual Static Analysis - Binary or Bytecode",
+          "Dynamic Analysis with Automated Results Interpretation",
+          "Dynamic Analysis with Manual Results Interpretation",
+          "Manual Static Analysis - Source Code",
+          "Automated Static Analysis - Source Code",
+          "Architecture or Design Review"
+        ],
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/295.html",
+            "external_id": "CWE-295"
+          },
+          {
+            "source_name": "Sascha Fahl, Marian Harbach, Thomas Muders, Matthew Smith, Lars Baumgärtner, Bernd Freisleben",
+            "description": "Why Eve and Mallory Love Android: An Analysis of Android SSL (In)Security",
+            "url": "http://www2.dcsec.uni-hannover.de/files/android/p50-fahl.pdf",
+            "external_id": "REF-243"
+          },
+          {
+            "source_name": "M. Bishop",
+            "description": "Computer Security: Art and Science",
+            "external_id": "REF-244"
+          },
+          {
+            "source_name": "OWASP Top Ten 2004",
+            "description": "Insecure Configuration Management",
+            "external_id": "A10"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/459.html",
+            "external_id": "CAPEC-459"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/475.html",
+            "external_id": "CAPEC-475"
+          }
+        ],
+        "id": "weakness--a9a2086c-4b04-5c71-a1c2-5f43c72e5872",
+        "modes_of_introduction": [
+          "Architecture and Design",
+          "Implementation",
+          "Implementation"
+        ],
+        "modified": "2023-06-29T00:00:00.000Z",
+        "name": "Improper Certificate Validation",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Access Control"
+        ],
+        "created": "2006-07-19T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "Simple authentication protocols are subject to reflection attacks if a malicious user can use the target machine to impersonate a trusted user. <html:p>A mutual authentication protocol requires each party to respond to a random challenge by the other party by encrypting it with a pre-shared key. Often, however, such protocols employ the same pre-shared key for communication with a number of different entities. A malicious user or an attacker can easily compromise this protocol without possessing the correct key by employing a reflection attack on the protocol.</html:p>\n            <html:p>Reflection attacks capitalize on mutual authentication schemes in order to trick the target into revealing the secret shared between it and another valid user. In a basic mutual-authentication scheme, a secret is known to both the valid user and the server; this allows them to authenticate. In order that they may verify this shared secret without sending it plainly over the wire, they utilize a Diffie-Hellman-style scheme in which they each pick a value, then request the hash of that value as keyed by the shared secret. In a reflection attack, the attacker claims to be a valid user and requests the hash of a random value from the server. When the server returns this value and requests its own value to be hashed, the attacker opens another connection to the server. This time, the hash requested by the attacker is the value which the server requested in the first connection. When the server returns this hashed value, it is used in the first connection, authenticating the attacker successfully as the impersonated valid user.</html:p>\n\t\t ",
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/301.html",
+            "external_id": "CWE-301"
+          },
+          {
+            "source_name": "Secure Software, Inc.",
+            "description": "The CLASP Application Security Process",
+            "url": "https://cwe.mitre.org/documents/sources/TheCLASPApplicationSecurityProcess.pdf",
+            "external_id": "REF-18"
+          },
+          {
+            "source_name": "Mark Dowd, John McDonald, Justin Schuh",
+            "description": "The Art of Software Security Assessment",
+            "external_id": "REF-62"
+          },
+          {
+            "source_name": "CLASP",
+            "description": "Reflection attack in an auth protocol"
+          },
+          {
+            "source_name": "OWASP Top Ten 2007",
+            "description": "Broken Authentication and Session Management",
+            "external_id": "A7"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/90.html",
+            "external_id": "CAPEC-90"
+          }
+        ],
+        "id": "weakness--03d4479c-8e00-53eb-981a-03abd394ed72",
+        "likelihood_of_exploit": [
+          "Medium"
+        ],
+        "modes_of_introduction": [
+          "Architecture and Design"
+        ],
+        "modified": "2023-06-29T00:00:00.000Z",
+        "name": "Reflection Attack in an Authentication Protocol",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Access Control"
+        ],
+        "created": "2006-07-19T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "The requirements for the product dictate the use of an established authentication algorithm, but the implementation of the algorithm is incorrect. This incorrect implementation may allow authentication to be bypassed.",
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/303.html",
+            "external_id": "CWE-303"
+          },
+          {
+            "source_name": "PLOVER",
+            "description": "Authentication Logic Error"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/90.html",
+            "external_id": "CAPEC-90"
+          }
+        ],
+        "id": "weakness--5f335d1a-f311-57ef-8ce3-4d57560d5333",
+        "modes_of_introduction": [
+          "Implementation"
+        ],
+        "modified": "2023-06-29T00:00:00.000Z",
+        "name": "Incorrect Implementation of Authentication Algorithm",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Access Control"
+        ],
+        "created": "2006-07-19T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "The authentication algorithm is sound, but the implemented mechanism can be bypassed as the result of a separate weakness that is primary to the authentication error. None",
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/305.html",
+            "external_id": "CWE-305"
+          },
+          {
+            "source_name": "PLOVER",
+            "description": "Authentication Bypass by Primary Weakness"
+          }
+        ],
+        "id": "weakness--c9b3e874-b7a4-5652-80ab-75c15f160989",
+        "modes_of_introduction": [
+          "Implementation"
+        ],
+        "modified": "2023-06-29T00:00:00.000Z",
+        "name": "Authentication Bypass by Primary Weakness",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Access Control",
+          "Other"
+        ],
+        "created": "2006-07-19T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "The product does not perform any authentication for functionality that requires a provable user identity or consumes a significant amount of resources. None",
+        "detection_methods": [
+          "Manual Analysis",
+          "Automated Static Analysis",
+          "Manual Static Analysis - Binary or Bytecode",
+          "Dynamic Analysis with Automated Results Interpretation",
+          "Dynamic Analysis with Manual Results Interpretation",
+          "Manual Static Analysis - Source Code",
+          "Automated Static Analysis - Source Code",
+          "Architecture or Design Review"
+        ],
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/306.html",
+            "external_id": "CWE-306"
+          },
+          {
+            "source_name": "Mark Dowd, John McDonald, Justin Schuh",
+            "description": "The Art of Software Security Assessment",
+            "external_id": "REF-62"
+          },
+          {
+            "source_name": "Frank Kim",
+            "description": "Top 25 Series - Rank 19 - Missing Authentication for Critical Function",
+            "url": "https://www.sans.org/blog/top-25-series-rank-19-missing-authentication-for-critical-function/",
+            "external_id": "REF-257"
+          },
+          {
+            "source_name": "OWASP",
+            "description": "OWASP Enterprise Security API (ESAPI) Project",
+            "url": "http://www.owasp.org/index.php/ESAPI",
+            "external_id": "REF-45"
+          },
+          {
+            "source_name": "Forescout Vedere Labs",
+            "description": "OT:ICEFALL: The legacy of \"insecure by design\" and its implications for certifications and risk management",
+            "url": "https://www.forescout.com/resources/ot-icefall-report/",
+            "external_id": "REF-1283"
+          },
+          {
+            "source_name": "WizCase",
+            "description": "Over 80 US Municipalities' Sensitive Information, Including Resident's Personal Data, Left Vulnerable in Massive Data Breach",
+            "url": "https://www.wizcase.com/blog/us-municipality-breach-report/",
+            "external_id": "REF-1295"
+          },
+          {
+            "source_name": "Jonathan Greig",
+            "description": "1,000 GB of local government data exposed by Massachusetts software company",
+            "url": "https://www.zdnet.com/article/1000-gb-of-local-government-data-exposed-by-massachusetts-software-company/",
+            "external_id": "REF-1296"
+          },
+          {
+            "source_name": "Amazon",
+            "description": "AWS Foundational Security Best Practices controls",
+            "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.html",
+            "external_id": "REF-1297"
+          },
+          {
+            "source_name": "Microsoft",
+            "description": "Authentication and authorization in Azure App Service and Azure Functions",
+            "url": "https://learn.microsoft.com/en-us/azure/app-service/overview-authentication-authorization",
+            "external_id": "REF-1298"
+          },
+          {
+            "source_name": "Google Cloud",
+            "description": "Authentication and authorization use cases",
+            "url": "https://cloud.google.com/docs/authentication/use-cases",
+            "external_id": "REF-1302"
+          },
+          {
+            "source_name": "PLOVER",
+            "description": "No Authentication for Critical Function"
+          },
+          {
+            "source_name": "Software Fault Patterns",
+            "description": "Missing authentication",
+            "external_id": "SFP31"
+          },
+          {
+            "source_name": "ISA/IEC 62443",
+            "description": "Req CR 1.1",
+            "external_id": "Part 4-2"
+          },
+          {
+            "source_name": "ISA/IEC 62443",
+            "description": "Req CR 1.2",
+            "external_id": "Part 4-2"
+          },
+          {
+            "source_name": "ISA/IEC 62443",
+            "description": "Req CR 2.1",
+            "external_id": "Part 4-2"
+          },
+          {
+            "source_name": "ISA/IEC 62443",
+            "description": "Req SR-2",
+            "external_id": "Part 4-1"
+          },
+          {
+            "source_name": "ISA/IEC 62443",
+            "description": "Req SVV-3",
+            "external_id": "Part 4-1"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/12.html",
+            "external_id": "CAPEC-12"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/166.html",
+            "external_id": "CAPEC-166"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/216.html",
+            "external_id": "CAPEC-216"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/36.html",
+            "external_id": "CAPEC-36"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/62.html",
+            "external_id": "CAPEC-62"
+          }
+        ],
+        "id": "weakness--d7b0b765-9252-566d-8bfe-d4ec6aad91b8",
+        "likelihood_of_exploit": [
+          "High"
+        ],
+        "modes_of_introduction": [
+          "Architecture and Design",
+          "Architecture and Design",
+          "Operation"
+        ],
+        "modified": "2024-11-19T00:00:00.000Z",
+        "name": "Missing Authentication for Critical Function",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Access Control"
+        ],
+        "created": "2006-07-19T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "The product does not implement sufficient measures to prevent multiple failed authentication attempts within a short time frame. None",
+        "detection_methods": [
+          "Dynamic Analysis with Automated Results Interpretation",
+          "Dynamic Analysis with Manual Results Interpretation",
+          "Manual Static Analysis - Source Code",
+          "Automated Static Analysis - Source Code",
+          "Automated Static Analysis",
+          "Architecture or Design Review"
+        ],
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/307.html",
+            "external_id": "CWE-307"
+          },
+          {
+            "source_name": "OWASP",
+            "description": "OWASP Enterprise Security API (ESAPI) Project",
+            "url": "http://www.owasp.org/index.php/ESAPI",
+            "external_id": "REF-45"
+          },
+          {
+            "source_name": "Kim Zetter",
+            "description": "Weak Password Brings 'Happiness' to Twitter Hacker",
+            "url": "https://www.wired.com/2009/01/professed-twitt/",
+            "external_id": "REF-236"
+          },
+          {
+            "source_name": "Graham Cluley",
+            "description": "This Black Box Can Brute Force Crack iPhone PIN Passcodes",
+            "url": "https://www.intego.com/mac-security-blog/iphone-pin-pass-code/",
+            "external_id": "REF-1218"
+          },
+          {
+            "source_name": "PLOVER",
+            "description": "Multiple Failed Authentication Attempts not Prevented",
+            "external_id": "AUTHENT.MULTFAIL"
+          },
+          {
+            "source_name": "Software Fault Patterns",
+            "description": "Unrestricted authentication",
+            "external_id": "SFP34"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/16.html",
+            "external_id": "CAPEC-16"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/49.html",
+            "external_id": "CAPEC-49"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/560.html",
+            "external_id": "CAPEC-560"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/565.html",
+            "external_id": "CAPEC-565"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/600.html",
+            "external_id": "CAPEC-600"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/652.html",
+            "external_id": "CAPEC-652"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/653.html",
+            "external_id": "CAPEC-653"
+          }
+        ],
+        "id": "weakness--2cf5e2a4-69eb-57dc-a73d-660a075d3137",
+        "modes_of_introduction": [
+          "Architecture and Design"
+        ],
+        "modified": "2024-11-19T00:00:00.000Z",
+        "name": "Improper Restriction of Excessive Authentication Attempts",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Access Control"
+        ],
+        "created": "2006-07-19T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "The use of single-factor authentication can lead to unnecessary risk of compromise when compared with the benefits of a dual-factor authentication scheme. While the use of multiple authentication schemes is simply piling on more complexity on top of authentication, it is inestimably valuable to have such measures of redundancy. The use of weak, reused, and common passwords is rampant on the internet. Without the added protection of multiple authentication schemes, a single mistake can result in the compromise of an account. For this reason, if multiple schemes are possible and also easy to use, they should be implemented and required.",
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/308.html",
+            "external_id": "CWE-308"
+          },
+          {
+            "source_name": "Secure Software, Inc.",
+            "description": "The CLASP Application Security Process",
+            "url": "https://cwe.mitre.org/documents/sources/TheCLASPApplicationSecurityProcess.pdf",
+            "external_id": "REF-18"
+          },
+          {
+            "source_name": "CLASP",
+            "description": "Using single-factor authentication"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/16.html",
+            "external_id": "CAPEC-16"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/49.html",
+            "external_id": "CAPEC-49"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/509.html",
+            "external_id": "CAPEC-509"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/55.html",
+            "external_id": "CAPEC-55"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/555.html",
+            "external_id": "CAPEC-555"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/560.html",
+            "external_id": "CAPEC-560"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/561.html",
+            "external_id": "CAPEC-561"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/565.html",
+            "external_id": "CAPEC-565"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/600.html",
+            "external_id": "CAPEC-600"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/644.html",
+            "external_id": "CAPEC-644"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/645.html",
+            "external_id": "CAPEC-645"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/652.html",
+            "external_id": "CAPEC-652"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/653.html",
+            "external_id": "CAPEC-653"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/70.html",
+            "external_id": "CAPEC-70"
+          }
+        ],
+        "id": "weakness--37cfafbe-fda1-533f-abd3-102a6cf5f0b5",
+        "likelihood_of_exploit": [
+          "High"
+        ],
+        "modes_of_introduction": [
+          "Architecture and Design"
+        ],
+        "modified": "2023-10-26T00:00:00.000Z",
+        "name": "Use of Single-factor Authentication",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Access Control"
+        ],
+        "created": "2006-07-19T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "The use of password systems as the primary means of authentication may be subject to several flaws or shortcomings, each reducing the effectiveness of the mechanism. None",
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/309.html",
+            "external_id": "CWE-309"
+          },
+          {
+            "source_name": "Secure Software, Inc.",
+            "description": "The CLASP Application Security Process",
+            "url": "https://cwe.mitre.org/documents/sources/TheCLASPApplicationSecurityProcess.pdf",
+            "external_id": "REF-18"
+          },
+          {
+            "source_name": "CLASP",
+            "description": "Using password systems"
+          },
+          {
+            "source_name": "OWASP Top Ten 2004",
+            "description": "Broken Authentication and Session Management",
+            "external_id": "A3"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/16.html",
+            "external_id": "CAPEC-16"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/49.html",
+            "external_id": "CAPEC-49"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/509.html",
+            "external_id": "CAPEC-509"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/55.html",
+            "external_id": "CAPEC-55"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/555.html",
+            "external_id": "CAPEC-555"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/560.html",
+            "external_id": "CAPEC-560"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/561.html",
+            "external_id": "CAPEC-561"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/565.html",
+            "external_id": "CAPEC-565"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/600.html",
+            "external_id": "CAPEC-600"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/652.html",
+            "external_id": "CAPEC-652"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/653.html",
+            "external_id": "CAPEC-653"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/70.html",
+            "external_id": "CAPEC-70"
+          }
+        ],
+        "id": "weakness--f845e6c5-0b27-5cd3-9e6a-11655a529445",
+        "likelihood_of_exploit": [
+          "High"
+        ],
+        "modes_of_introduction": [
+          "Architecture and Design"
+        ],
+        "modified": "2023-06-29T00:00:00.000Z",
+        "name": "Use of Password System for Primary Authentication",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Access Control",
+          "Confidentiality"
+        ],
+        "created": "2006-07-19T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "The product performs a key exchange with an actor without verifying the identity of that actor. Performing a key exchange will preserve the integrity of the information sent between two entities, but this will not guarantee that the entities are who they claim they are. This may enable an attacker to impersonate an actor by modifying traffic between the two entities.  Typically, this involves a victim client that contacts a malicious server that is impersonating a trusted server. If the client skips authentication or ignores an authentication failure, the malicious server may request authentication information from the user. The malicious server can then use this authentication information to log in to the trusted server using the victim's credentials, sniff traffic between the victim and trusted server, etc.",
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/322.html",
+            "external_id": "CWE-322"
+          },
+          {
+            "source_name": "Secure Software, Inc.",
+            "description": "The CLASP Application Security Process",
+            "url": "https://cwe.mitre.org/documents/sources/TheCLASPApplicationSecurityProcess.pdf",
+            "external_id": "REF-18"
+          },
+          {
+            "source_name": "Michael Howard, David LeBlanc, John Viega",
+            "description": "24 Deadly Sins of Software Security",
+            "external_id": "REF-44"
+          },
+          {
+            "source_name": "Mark Dowd, John McDonald, Justin Schuh",
+            "description": "The Art of Software Security Assessment",
+            "external_id": "REF-62"
+          },
+          {
+            "source_name": "CLASP",
+            "description": "Key exchange without entity authentication"
+          }
+        ],
+        "id": "weakness--38c509b8-71d4-5bd5-a8e4-7f9d2ff52324",
+        "likelihood_of_exploit": [
+          "High"
+        ],
+        "modes_of_introduction": [
+          "Architecture and Design"
+        ],
+        "modified": "2023-06-29T00:00:00.000Z",
+        "name": "Key Exchange without Entity Authentication",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Access Control"
+        ],
+        "created": "2007-05-07T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "A client/server product performs authentication within client code but not in server code, allowing server-side authentication to be bypassed via a modified client that omits the authentication check. Client-side authentication is extremely weak and may be breached easily. Any attacker may read the source code and reverse-engineer the authentication mechanism to access parts of the application which would otherwise be protected.",
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/603.html",
+            "external_id": "CWE-603"
+          },
+          {
+            "source_name": "Mark Dowd, John McDonald, Justin Schuh",
+            "description": "The Art of Software Security Assessment",
+            "external_id": "REF-62"
+          },
+          {
+            "source_name": "Forescout Vedere Labs",
+            "description": "OT:ICEFALL: The legacy of \"insecure by design\" and its implications for certifications and risk management",
+            "url": "https://www.forescout.com/resources/ot-icefall-report/",
+            "external_id": "REF-1283"
+          }
+        ],
+        "id": "weakness--d92f39ef-f7f2-5a0d-a2d1-5ef33682f585",
+        "modes_of_introduction": [
+          "Architecture and Design",
+          "Implementation"
+        ],
+        "modified": "2023-06-29T00:00:00.000Z",
+        "name": "Use of Client-Side Authentication",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Availability"
+        ],
+        "created": "2008-01-30T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "The product contains an account lockout protection mechanism, but the mechanism is too restrictive and can be triggered too easily, which allows attackers to deny service to legitimate users by causing their accounts to be locked out. Account lockout is a security feature often present in applications as a countermeasure to the brute force attack on the password based authentication mechanism of the system. After a certain number of failed login attempts, the users' account may be disabled for a certain period of time or until it is unlocked by an administrator. Other security events may also possibly trigger account lockout. However, an attacker may use this very security feature to deny service to legitimate system users. It is therefore important to ensure that the account lockout security mechanism is not overly restrictive.",
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/645.html",
+            "external_id": "CWE-645"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/2.html",
+            "external_id": "CAPEC-2"
+          }
+        ],
+        "id": "weakness--5f3fe673-dc31-5cb0-9581-ce66fb493a1c",
+        "likelihood_of_exploit": [
+          "High"
+        ],
+        "modes_of_introduction": [
+          "Architecture and Design"
+        ],
+        "modified": "2023-06-29T00:00:00.000Z",
+        "name": "Overly Restrictive Account Lockout Mechanism",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Access Control",
+          "Other"
+        ],
+        "created": "2010-01-15T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "The product uses a CAPTCHA challenge, but the challenge can be guessed or automatically recognized by a non-human actor. <html:p>An automated attacker could bypass the intended protection of the CAPTCHA challenge and perform actions at a higher frequency than humanly possible, such as launching spam attacks.</html:p>\n            <html:p>There can be several different causes of a guessable CAPTCHA:</html:p>\n               <html:ul>\n                  <html:li>An audio or visual image that does not have sufficient distortion from the unobfuscated source image.</html:li>\n                  <html:li>A question is generated with a format that can be automatically recognized, such as a math question.</html:li>\n                  <html:li>A question for which the number of possible answers is limited, such as birth years or favorite sports teams.</html:li>\n                  <html:li>A general-knowledge or trivia question for which the answer can be accessed using a data base, such as country capitals or popular entertainers.</html:li>\n                  <html:li>Other data associated with the CAPTCHA may provide hints about its contents, such as an image whose filename contains the word that is used in the CAPTCHA.</html:li>\n               </html:ul>\n         ",
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/804.html",
+            "external_id": "CWE-804"
+          },
+          {
+            "source_name": "Web Application Security Consortium",
+            "description": "Insufficient Anti-automation",
+            "url": "http://projects.webappsec.org/Insufficient+Anti-automation",
+            "external_id": "REF-731"
+          },
+          {
+            "source_name": "WASC",
+            "description": "Insufficient Anti-Automation",
+            "external_id": "21"
+          }
+        ],
+        "id": "weakness--7a0b98d8-d949-5051-9274-e89e036d4cb9",
+        "modes_of_introduction": [
+          "Architecture and Design",
+          "Implementation"
+        ],
+        "modified": "2023-10-26T00:00:00.000Z",
+        "name": "Guessable CAPTCHA",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "common_consequences": [
+          "Access Control"
+        ],
+        "created": "2011-03-22T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "The product records password hashes in a data store, receives a hash of a password from a client, and compares the supplied hash to the hash obtained from the data store. <html:p>Some authentication mechanisms rely on the client to generate the hash for a password, possibly to reduce load on the server or avoid sending the password across the network. However, when the client is used to generate the hash, an attacker can bypass the authentication by obtaining a copy of the hash, e.g. by using SQL injection to compromise a database of authentication credentials, or by exploiting an information exposure. The attacker could then use a modified client to replay the stolen hash without having knowledge of the original password.</html:p>\n            <html:p>As a result, the server-side comparison against a client-side hash does not provide any more security than the use of passwords without hashing.</html:p>\n         ",
+        "extensions": {
+          "extension-definition--31725edc-7d81-5db7-908a-9134f322284a": {
+            "extension_type": "new-sdo"
+          }
+        },
+        "external_references": [
+          {
+            "source_name": "cwe",
+            "url": "http://cwe.mitre.org/data/definitions/836.html",
+            "external_id": "CWE-836"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/644.html",
+            "external_id": "CAPEC-644"
+          },
+          {
+            "source_name": "capec",
+            "url": "https://capec.mitre.org/data/definitions/652.html",
+            "external_id": "CAPEC-652"
+          }
+        ],
+        "id": "weakness--7a44d429-0e45-57a5-9903-944e8c6b824c",
+        "modes_of_introduction": [
+          "Implementation"
+        ],
+        "modified": "2023-06-29T00:00:00.000Z",
+        "name": "Use of Password Hash Instead of Password for Authentication",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "spec_version": "2.1",
+        "type": "weakness"
+      },
+      {
+        "context": "unspecified",
+        "created": "2019-12-30T00:00:00.000Z",
+        "created_by_ref": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
+        "description": "Weaknesses in this category are related to authentication components of a system. Frequently these deal with the ability to verify that an entity is indeed who it claims to be. If not addressed when designing or implementing a software system, these weaknesses could lead to a degradation of the quality of the authentication capability.",
+        "external_references": [
+          {
+            "source_name": "cwe_category",
+            "external_id": "1211"
+          }
+        ],
+        "id": "grouping--6ccfc2db-4deb-5289-b2c9-406ea03b0b89",
+        "modified": "2023-06-29T00:00:00.000Z",
+        "name": "Authentication Errors",
+        "object_marking_refs": [
+          "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+          "marking-definition--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b"
+        ],
+        "object_refs": [
+          "weakness--c454ae8e-2b5b-5a67-b664-6b06168577d5",
+          "weakness--807b79f2-45de-5261-85e4-2c528ae8c582",
+          "weakness--4da96b29-dad0-5aa1-bb88-84b5a723b7c8",
+          "weakness--a9a2086c-4b04-5c71-a1c2-5f43c72e5872",
+          "weakness--03d4479c-8e00-53eb-981a-03abd394ed72",
+          "weakness--5f335d1a-f311-57ef-8ce3-4d57560d5333",
+          "weakness--c9b3e874-b7a4-5652-80ab-75c15f160989",
+          "weakness--d7b0b765-9252-566d-8bfe-d4ec6aad91b8",
+          "weakness--2cf5e2a4-69eb-57dc-a73d-660a075d3137",
+          "weakness--37cfafbe-fda1-533f-abd3-102a6cf5f0b5",
+          "weakness--f845e6c5-0b27-5cd3-9e6a-11655a529445",
+          "weakness--38c509b8-71d4-5bd5-a8e4-7f9d2ff52324",
+          "weakness--d92f39ef-f7f2-5a0d-a2d1-5ef33682f585",
+          "weakness--5f3fe673-dc31-5cb0-9581-ce66fb493a1c",
+          "weakness--7a0b98d8-d949-5051-9274-e89e036d4cb9",
+          "weakness--7a44d429-0e45-57a5-9903-944e8c6b824c"
+        ],
+        "spec_version": "2.1",
+        "type": "grouping"
+      }
+    ]
+}

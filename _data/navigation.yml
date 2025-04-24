@@ -1,8 +1,12 @@
+- name: Blog
+  link: /blog
+  new_window: false
+  highlight: false
 - name: Sign Up
   link: https://app.ctibutler.com
-  new_window: false
+  new_window: true
   highlight: true
 - name: Sign In
   link: https://app.ctibutler.com
-  new_window: false
+  new_window: true
   highlight: true
