@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '3.1.4' 
+ruby '3.4.4' 
  
-gem 'jekyll', '~> 4.3'  
+gem 'jekyll', '~> 4.4'  
 gem 'rake', '~> 13.0'
 gem 'webrick', '~> 1.8'  
 gem 'html-proofer', '~> 5.0'
