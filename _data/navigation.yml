@@ -2,6 +2,10 @@
   link: /blog
   new_window: false
   highlight: false
+- name: Pricing
+  link: /pricing
+  new_window: false
+  highlight: false
 - name: Sign Up
   link: https://app.ctibutler.com
   new_window: true
