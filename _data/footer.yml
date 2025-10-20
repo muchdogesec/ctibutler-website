@@ -1,19 +1,26 @@
 - links:
   - name: GitHub
     link: https://github.com/muchdogesec/ctibutler/
+    new_window: true
 
 - links:
   - name: Pricing
     link: /pricing
+    new_window: false
   - name: Sign In
     link: https://app.ctibutler.com
+    new_window: false
   - name: Sign Up
     link: https://app.ctibutler.com
+    new_window: false
 
 - links:
   - name: Support
     link: https://support.dogesec.com/
+    new_window: true
   - name: Blog
-    link: /blog
+    link: https://www.dogesec.com/blog
+    new_window: true
   - name: Community
     link: https://community.dogesec.com/
+    new_window: true
