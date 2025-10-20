@@ -9,10 +9,10 @@
     new_window: false
   - name: Sign In
     link: https://app.ctibutler.com
-    new_window: false
+    new_window: true
   - name: Sign Up
     link: https://app.ctibutler.com
-    new_window: false
+    new_window: true
 
 - links:
   - name: Support
