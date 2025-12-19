@@ -1,3 +1,7 @@
+- name: Demos
+  link: https://www.youtube.com/playlist?list=PLUXuxw033h9AT0IYP_J4bJkLUbqBVdWUl
+  new_window: true
+  highlight: false
 - name: Blog
   link: https://www.dogesec.com/blog
   new_window: true
