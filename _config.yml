@@ -14,7 +14,7 @@ show_drafts: false
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: assets/images/icons/siteicon.png
-description: The CTI Search Engine. The most important cyber threat intelligence knowledgebases accessible in a single platform.
+description: CTI Context for AI Agents. The most important cyber threat intelligence knowledgebases accessible in a single platform.
 author:
   name: dogesec
 twitter:
