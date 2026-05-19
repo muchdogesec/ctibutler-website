@@ -19,6 +19,7 @@
 	"@type": "SoftwareApplication",
 	"name": {{ site.product_data.name | jsonify }},
 	"applicationCategory": {{ site.product_data.application_category | jsonify }},
+	{% if site.product_data.application_sub_category %}"applicationSubCategory": {{ site.product_data.application_sub_category | jsonify }},{% endif %}
 	"operatingSystem": {{ site.product_data.operating_system | jsonify }},
 	"url": {{ site.product_data.url | jsonify }},
 	"description": {{ page.description | default: site.product_data.description | jsonify }},
@@ -28,10 +29,24 @@
 		"name": {{ site.company_data.name | jsonify }},
 		"url": {{ site.company_data.url | jsonify }}
 	},
-	"softwareHelp": {
-		"@type": "CreativeWork",
-		"url": {{ site.product_data.documentation_url | jsonify }}
+	"potentialAction": {
+		"@type": "RegisterAction",
+		"target": {{ site.product_data.sign_up_url | jsonify }}
 	},
+	"subjectOf": [
+		{
+			"@type": "WebAPI",
+			"name": "CTI Butler REST API",
+			"documentation": {{ site.product_data.api_reference_url | jsonify }},
+			"url": {{ site.product_data.api_reference_url | jsonify }}
+		},
+		{
+			"@type": "WebAPI",
+			"name": "CTI Butler TAXII 2.1 API",
+			"documentation": {{ site.product_data.taxii_api_reference_url | jsonify }},
+			"url": {{ site.product_data.taxii_api_reference_url | jsonify }}
+		}
+	],
 	"codeRepository": {{ site.product_data.source_code_url | jsonify }},
 	"featureList": {{ site.product_data.feature_list | jsonify }}
 }

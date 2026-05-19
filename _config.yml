@@ -42,9 +42,9 @@ company_data:
 
 product_data:
   name: CTI Butler
-  category: Threat intelligence knowledge base platform
   application_category: SecurityApplication
   operating_system: Web browser
+  application_sub_category: Structured Threat Intelligence Extraction
   url: https://www.ctibutler.com
   source_code_url: https://github.com/muchdogesec/ctibutler
   sign_up_url: https://app.ctibutler.com
