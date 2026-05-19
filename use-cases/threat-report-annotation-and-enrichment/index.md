@@ -1,6 +1,11 @@
 ---
 title: Threat Report Annotation and Enrichment
 description: Use CTI Butler to connect written intelligence to structured frameworks, supporting material, and exportable CTI context.
+author: dogesec
+image: /assets/images/global/ctibutler-object.png
+sitemap: true
+excluded_in_search: false
+permalink: /use-cases/threat-report-annotation-and-enrichment/
 featured_image: /assets/images/global/ctibutler-object.png
 breadcrumbs:
   - name: Home

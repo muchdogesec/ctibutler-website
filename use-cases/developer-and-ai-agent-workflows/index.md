@@ -1,6 +1,11 @@
 ---
 title: Developer and AI Agent Workflows
 description: Use CTI Butler as a structured CTI retrieval layer for internal tools, automations, and AI agents.
+author: dogesec
+image: /assets/images/global/ctibutler-api.png
+sitemap: true
+excluded_in_search: false
+permalink: /use-cases/developer-and-ai-agent-workflows/
 featured_image: /assets/images/global/ctibutler-api.png
 breadcrumbs:
   - name: Home

@@ -1,6 +1,11 @@
 ---
 title: Improve Detection and Hunting with CTI Context
 description: Bring ATT&CK context, linked knowledge, and technique inference into detection engineering and threat hunting workflows with CTI Butler.
+author: dogesec
+image: /assets/images/global/ctibutler-attack.png
+sitemap: true
+excluded_in_search: false
+permalink: /solutions/improve-detection-and-hunting-with-cti-context/
 featured_image: /assets/images/global/ctibutler-attack.png
 breadcrumbs:
   - name: Home

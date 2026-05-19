@@ -1,6 +1,11 @@
 ---
 title: CTI Butler OpenCTI Integration
 description: Use CTI Butler with OpenCTI workflows to import and maintain major CTI knowledge bases in an environment built for graph-driven operational intelligence.
+author: dogesec
+image: /assets/images/global/ctibutler-github.png
+sitemap: true
+excluded_in_search: false
+permalink: /integrations/opencti/
 featured_image: /assets/images/global/ctibutler-github.png
 breadcrumbs:
   - name: Home

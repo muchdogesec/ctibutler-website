@@ -1,6 +1,11 @@
 ---
 title: Operationalise Connected CTI Knowledge
 description: Use CTI Butler to turn major threat intelligence knowledge bases into practical, searchable, connected working context for analysts, defenders, and engineering teams.
+author: dogesec
+image: /assets/images/global/ctibutler-object.png
+sitemap: true
+excluded_in_search: false
+permalink: /solutions/operationalise-connected-threat-intelligence-knowledge/
 featured_image: /assets/images/global/ctibutler-object.png
 breadcrumbs:
   - name: Home

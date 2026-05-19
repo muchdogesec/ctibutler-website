@@ -1,6 +1,11 @@
 ---
 title: CTI Butler TAXII 2.1 API
 description: Use the CTI Butler TAXII 2.1 API to deliver structured CTI content into standards-based tooling and downstream collection workflows.
+author: dogesec
+image: /assets/images/global/ctibutler-endpoints.png
+sitemap: true
+excluded_in_search: false
+permalink: /integrations/taxii-2-1-api/
 featured_image: /assets/images/global/ctibutler-endpoints.png
 breadcrumbs:
   - name: Home

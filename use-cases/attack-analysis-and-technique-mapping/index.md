@@ -1,6 +1,11 @@
 ---
 title: Attack Analysis and Technique Mapping
 description: Use CTI Butler to research ATT&CK techniques, connected frameworks, and surrounding context during attack analysis and mapping workflows.
+author: dogesec
+image: /assets/images/global/ctibutler-attack.png
+sitemap: true
+excluded_in_search: false
+permalink: /use-cases/attack-analysis-and-technique-mapping/
 featured_image: /assets/images/global/ctibutler-attack.png
 breadcrumbs:
   - name: Home
