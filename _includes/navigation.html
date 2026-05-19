@@ -1,14 +1,39 @@
-<nav>
-	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
-	{% for link in site.data.navigation %}
-		{% assign class = "" %}
-		{% if link.highlight %}
-			{% assign class = class | append: " highlight" %}
-		{% endif %}
-
-		{% if link.link == page.url %}
-			{% assign class = class | append: " active" %}
-		{% endif %}
-		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
-	{% endfor %}
+<nav class="site-nav">
+	<a class="nav-toggle" id="open-nav" href="#" aria-label="Open navigation">&#9776;</a>
+	<ul class="main-nav">
+		{% for link in site.data.navigation %}
+			{% assign is_active = false %}
+			{% if link.link == page.url %}
+				{% assign is_active = true %}
+			{% elsif link.link != '/' and page.url contains link.link %}
+				{% assign is_active = true %}
+			{% endif %}
+			{% if link.children %}
+				{% for child in link.children %}
+					{% if child.link == page.url %}
+						{% assign is_active = true %}
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+			<li class="nav-item{% if link.children %} has-children{% endif %}{% if link.highlight %} highlight-item{% endif %}{% if is_active %} active{% endif %}">
+				<div class="nav-link-row">
+					<a href="{% include relative-src.html src=link.link %}" class="nav-link{% if link.highlight %} highlight{% endif %}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
+					{% if link.children %}
+						<button class="submenu-toggle" type="button" aria-expanded="false" aria-label="Toggle {{ link.name }} submenu">
+							<span></span>
+						</button>
+					{% endif %}
+				</div>
+				{% if link.children %}
+					<ul class="submenu">
+						{% for child in link.children %}
+							<li class="{% if child.link == page.url %}active{% endif %}">
+								<a href="{% include relative-src.html src=child.link %}" {% if child.new_window %}target="_blank"{% endif %}>{{ child.name }}</a>
+							</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
 </nav>

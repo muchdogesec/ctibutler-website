@@ -1,13 +1,48 @@
-- name: Demos
-  link: https://www.youtube.com/playlist?list=PLUXuxw033h9AT0IYP_J4bJkLUbqBVdWUl
-  new_window: true
+- name: Solutions
+  link: /solutions/
+  new_window: false
   highlight: false
-- name: Blog
-  link: https://www.dogesec.com/blog
-  new_window: true
+  children:
+    - name: Operationalise Connected CTI Knowledge
+      link: /solutions/operationalise-connected-threat-intelligence-knowledge/
+    - name: Improve Detection and Hunting with CTI Context
+      link: /solutions/improve-detection-and-hunting-with-cti-context/
+    - name: Reduce Manual CTI Research and Enrichment
+      link: /solutions/reduce-manual-cti-research-and-enrichment/
+    - name: Connect Threat Intelligence Across Frameworks
+      link: /solutions/connect-threat-intelligence-across-frameworks/
+    - name: Build AI-Ready Security Workflows
+      link: /solutions/build-ai-ready-security-workflows/
+- name: Use Cases
+  link: /use-cases/
+  new_window: false
   highlight: false
+  children:
+    - name: Attack Analysis and Technique Mapping
+      link: /use-cases/attack-analysis-and-technique-mapping/
+    - name: CTI Research and Investigation
+      link: /use-cases/cti-research-and-investigation/
+    - name: Threat Report Annotation and Enrichment
+      link: /use-cases/threat-report-annotation-and-enrichment/
+    - name: Attack Emulation and Coverage Validation
+      link: /use-cases/detection-engineering-and-coverage-validation/
+    - name: Developer and AI Agent Workflows
+      link: /use-cases/developer-and-ai-agent-workflows/
+- name: Integrations
+  link: /integrations/
+  new_window: false
+  highlight: false
+  children:
+    - name: REST API
+      link: /integrations/rest-api/
+    - name: TAXII 2.1 API
+      link: /integrations/taxii-2-1-api/
+    - name: STIX Bundle Export
+      link: /integrations/stix-bundle-export/
+    - name: OpenCTI Integration
+      link: /integrations/opencti/
 - name: Pricing
-  link: /pricing
+  link: /pricing/
   new_window: false
   highlight: false
 - name: Sign Up

@@ -1,0 +1,46 @@
+---
+title: CTI Butler TAXII 2.1 API
+description: Use the CTI Butler TAXII 2.1 API to deliver structured CTI content into standards-based tooling and downstream collection workflows.
+featured_image: /assets/images/global/ctibutler-endpoints.png
+breadcrumbs:
+  - name: Home
+    url: /
+  - name: Integrations
+    url: /integrations/
+  - name: TAXII 2.1 API
+    url: /integrations/taxii-2-1-api/
+---
+### Overview
+
+The CTI Butler TAXII 2.1 API provides a standards-based way to access CTI Butler content in workflows that already rely on TAXII collections and CTI tooling.
+
+It is designed for interoperability-first environments where machine-readable delivery matters as much as analyst usability.
+
+This is especially relevant for teams that already have CTI infrastructure built around standards-based exchange. Instead of building a custom fetch layer for common knowledge bases, they can use a workflow shape that security tooling already understands.
+
+### Why Teams Use It
+
+- To move CTI Butler data into TAXII-capable platforms
+- To operationalise structured CTI without building a custom ingestion layer
+- To standardise how reference intelligence is delivered to downstream tools
+
+### Example Use Cases
+
+- CTI collection syncing
+- Standards-based content distribution
+- ATT&CK and related framework access inside CTI tooling
+
+### Interoperability
+
+TAXII 2.1 makes CTI Butler easier to fit into broader CTI ecosystems that already expect standards-driven transport and update models.
+
+It also makes the product easier to position correctly. CTI Butler remains the context source and delivery layer, while the downstream platform remains the place where that content is further operationalised.
+
+<div class="related-links">
+  <h3>Related Links</h3>
+  <ul>
+    <li><a href="/use-cases/detection-engineering-and-coverage-validation/">Attack Emulation and Coverage Validation</a></li>
+    <li><a href="/solutions/operationalise-connected-threat-intelligence-knowledge/">Operationalise Connected CTI Knowledge</a></li>
+    <li><a href="/integrations/opencti/">OpenCTI Integration</a></li>
+  </ul>
+</div>

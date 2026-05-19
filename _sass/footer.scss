@@ -1,20 +1,16 @@
+.footer-column {
+	flex: 1 1 180px;
+	margin: 10px;
+}
+
 .footer-links {
 	width: 100%;
-	margin: 10px;
+	margin: 0;
 	padding: 0;
-
-	@media #{$tablet} {
-		-webkit-flex: 1 0 180px;
-		flex: 1 0 180px;
-	}
 
 	li {
 		list-style: none;
-		margin: 15px auto;
-
-		@media #{$tablet} {
-			max-width: 150px;
-		}
+		margin: 12px 0;
 		a {
 
 			&:hover {
@@ -67,8 +63,8 @@
 }
 
 footer {
-	padding: 50px 0 50px 0;
-	font-size: 1.1em;
+	padding: 50px 0;
+	font-size: 1.05em;
 	position: relative;
 	background: #2b2b40;
 	color: #fff;
@@ -89,15 +85,24 @@ footer {
 	}
 
 	h2 {
-		font-size: 1.4em;
-		margin: 30px 0;
+		font-size: .9em;
+		margin: 0 0 18px 0;
 		color: #ccc;
+		text-transform: uppercase;
+		letter-spacing: .08em;
 	}
 
 	.footer-columns {
 		@extend %flexbox;
 		@include flex-flow(wrap);
 		margin: -10px -10px 10px -10px;
+	}
+
+	.footer-meta {
+		border-top: 1px solid rgba(255,255,255,.1);
+		margin-top: 18px;
+		padding-top: 20px;
+		text-align: center;
 	}
 
 	a {

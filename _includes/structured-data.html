@@ -1,0 +1,57 @@
+{% assign is_resource_page = false %}
+{% if page.url == '/' or page.url == '/about/' or page.url == '/what-is-cti-butler/' or page.url contains '/solutions/' or page.url contains '/use-cases/' or page.url contains '/integrations/' %}
+	{% assign is_resource_page = true %}
+{% endif %}
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "Organization",
+	"name": {{ site.company_data.name | jsonify }},
+	"url": {{ site.company_data.url | jsonify }},
+	"logo": {{ site.company_data.logo | absolute_url | jsonify }},
+	"sameAs": {{ site.company_data.same_as | jsonify }}
+}
+</script>
+{% if is_resource_page %}
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "SoftwareApplication",
+	"name": {{ site.product_data.name | jsonify }},
+	"applicationCategory": {{ site.product_data.application_category | jsonify }},
+	"operatingSystem": {{ site.product_data.operating_system | jsonify }},
+	"url": {{ site.product_data.url | jsonify }},
+	"description": {{ page.description | default: site.product_data.description | jsonify }},
+	"abstract": {{ site.product_data.description | jsonify }},
+	"publisher": {
+		"@type": "Organization",
+		"name": {{ site.company_data.name | jsonify }},
+		"url": {{ site.company_data.url | jsonify }}
+	},
+	"softwareHelp": {
+		"@type": "CreativeWork",
+		"url": {{ site.product_data.documentation_url | jsonify }}
+	},
+	"codeRepository": {{ site.product_data.source_code_url | jsonify }},
+	"featureList": {{ site.product_data.feature_list | jsonify }}
+}
+</script>
+{% endif %}
+{% if page.breadcrumbs %}
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{% for crumb in page.breadcrumbs %}
+		{
+			"@type": "ListItem",
+			"position": {{ forloop.index }},
+			"name": {{ crumb.name | jsonify }},
+			"item": {{ crumb.url | absolute_url | jsonify }}
+		}{% unless forloop.last %},{% endunless %}
+		{% endfor %}
+	]
+}
+</script>
+{% endif %}
