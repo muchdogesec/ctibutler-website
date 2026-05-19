@@ -7,6 +7,7 @@
 
 		{% seo %}
 		{% feed_meta %}
+		{% include structured-data.html %}
 
 		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.css">
@@ -40,7 +41,7 @@
 	<body>
 		<header>
 			<div class="container">
-				<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/images/global/ctibutler-logo.png" alt="Vulmatch Logo" title="CTI Butler Logo" /></a></div>
+				<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/images/global/ctibutler-logo.png" alt="CTI Butler Logo" title="CTI Butler Logo" /></a></div>
 				{% include navigation.html %}
 			</div>
 		</header>
@@ -49,26 +50,61 @@
 			<div class="container">
 				<div class="footer-columns">
 					{% for column in site.data.footer %}
-					<ul class="footer-links">
-						{% for link in column.links %}
-							<li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
-								{% if link.social_icon %}
-									{% include social-icon.html icon=link.social_icon %}
-								{% endif %}
-								{{ link.name }}</a></li>
-						{% endfor %}
-					</ul>
+					<div class="footer-column">
+						<h2>{{ column.heading }}</h2>
+						<ul class="footer-links">
+							{% for link in column.links %}
+								<li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
+									{% if link.social_icon %}
+										{% include social-icon.html icon=link.social_icon %}
+									{% endif %}
+									{{ link.name }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
 					{% endfor %}
 				</div>
-				<p class="copyright">&copy; {{ site.time | date: '%Y' }} <a href="https://www.dogesec.com/" target="_blank">dogesec</a></p>
-				<p class="copyright"><a href="https://www.linkedin.com/company/dogesec" target="_blank">LinkedIn</a> | <a href="https://github.com/muchdogesec/" target="_blank">GitHub</a> | <a href="https://www.youtube.com/@muchdogesec" target="_blank">YouTube</a>
+				<div class="footer-meta">
+					<p class="copyright">&copy; {{ site.time | date: '%Y' }} <a href="https://www.dogesec.com/" target="_blank">dogesec</a></p>
+					<p class="copyright"><a href="https://www.linkedin.com/company/dogesec" target="_blank">LinkedIn</a> | <a href="https://github.com/muchdogesec/" target="_blank">GitHub</a> | <a href="https://www.youtube.com/@muchdogesec" target="_blank">YouTube</a></p>
+				</div>
 			</div>
 		</footer>
 		<script>
-			document.getElementById("open-nav").onclick = function () {
+			const navToggle = document.getElementById("open-nav");
+			const submenuToggles = document.querySelectorAll(".submenu-toggle");
+			navToggle.onclick = function () {
 				document.body.classList.toggle("nav-open");
 				return false;
 			};
+			submenuToggles.forEach(function (toggle) {
+				toggle.addEventListener("click", function () {
+					const parent = this.closest(".nav-item");
+					const isOpen = parent.classList.contains("submenu-open");
+					document.querySelectorAll(".nav-item.submenu-open").forEach(function (item) {
+						if (item !== parent) {
+							item.classList.remove("submenu-open");
+							const button = item.querySelector(".submenu-toggle");
+							if (button) {
+								button.setAttribute("aria-expanded", "false");
+							}
+						}
+					});
+					parent.classList.toggle("submenu-open", !isOpen);
+					this.setAttribute("aria-expanded", String(!isOpen));
+				});
+			});
+			document.addEventListener("click", function (event) {
+				if (!event.target.closest(".site-nav")) {
+					document.querySelectorAll(".nav-item.submenu-open").forEach(function (item) {
+						item.classList.remove("submenu-open");
+						const button = item.querySelector(".submenu-toggle");
+						if (button) {
+							button.setAttribute("aria-expanded", "false");
+						}
+					});
+				}
+			});
 		</script>
 		<script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
 		<script src="/assets/js/popper.min.js"></script>

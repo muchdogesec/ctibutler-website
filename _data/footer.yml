@@ -1,29 +1,80 @@
-- links:
-  - name: Demos
-    link: https://www.youtube.com/playlist?list=PLUXuxw033h9AT0IYP_J4bJkLUbqBVdWUl
-    new_window: true
-  - name: GitHub
-    link: https://github.com/muchdogesec/ctibutler/
-    new_window: true
+- heading: About CTI Butler
+  links:
+    - name: What is CTI Butler?
+      link: /what-is-cti-butler/
+      new_window: false
+    - name: Pricing
+      link: /pricing/
+      new_window: false
+    - name: Sign In
+      link: https://app.obstracts.com
+      new_window: true
+    - name: Sign Up
+      link: https://app.obstracts.com
+      new_window: true
 
-- links:
-  - name: Pricing
-    link: /pricing
-    new_window: false
-  - name: Sign In
-    link: https://app.ctibutler.com
-    new_window: true
-  - name: Sign Up
-    link: https://app.ctibutler.com
-    new_window: true
-
-- links:
-  - name: Support
-    link: https://support.dogesec.com/
-    new_window: true
-  - name: Blog
-    link: https://www.dogesec.com/blog
-    new_window: true
-  - name: Community
-    link: https://community.dogesec.com/
-    new_window: true
+- heading: Solutions
+  links:
+    - name: Operationalise Connected CTI Knowledge
+      link: /solutions/operationalise-connected-threat-intelligence-knowledge/
+      new_window: false
+    - name: Improve Detection and Hunting with CTI Context
+      link: /solutions/improve-detection-and-hunting-with-cti-context/
+      new_window: false
+    - name: Reduce Manual CTI Research and Enrichment
+      link: /solutions/reduce-manual-cti-research-and-enrichment/
+      new_window: false
+    - name: Connect Threat Intelligence Across Frameworks
+      link: /solutions/connect-threat-intelligence-across-frameworks/
+      new_window: false
+    - name: Build AI-Ready Security Workflows
+      link: /solutions/build-ai-ready-security-workflows/
+      new_window: false
+- heading: Use Cases
+  links:
+    - name: Attack Analysis and Technique Mapping
+      link: /use-cases/attack-analysis-and-technique-mapping/
+      new_window: false
+    - name: CTI Research and Investigation
+      link: /use-cases/cti-research-and-investigation/
+      new_window: false
+    - name: Threat Report Annotation and Enrichment
+      link: /use-cases/threat-report-annotation-and-enrichment/
+      new_window: false
+    - name: Attack Emulation and Coverage Validation
+      link: /use-cases/detection-engineering-and-coverage-validation/
+      new_window: false
+    - name: Developer and AI Agent Workflows
+      link: /use-cases/developer-and-ai-agent-workflows/
+      new_window: false
+- heading: Integrations
+  links:
+    - name: REST API
+      link: /integrations/rest-api/
+      new_window: false
+    - name: TAXII 2.1 API
+      link: /integrations/taxii-2-1-api/
+      new_window: false
+    - name: STIX Bundle Export
+      link: /integrations/stix-bundle-export/
+      new_window: false
+    - name: OpenCTI Integration
+      link: /integrations/opencti/
+      new_window: false
+- heading: Resources
+  links:
+    - name: Blog
+      link: https://www.dogesec.com/blog
+      new_window: true
+    - name: Demos
+      link: https://www.youtube.com/playlist?list=PLUXuxw033h9AT0IYP_J4bJkLUbqBVdWUl
+      new_window: true
+    - name: GitHub
+      link: https://github.com/muchdogesec/ctibutler/
+      new_window: true
+    - name: Support
+      link: https://support.dogesec.com/
+      new_window: true
+    - name: Community
+      link: https://community.dogesec.com/
+      new_window: true

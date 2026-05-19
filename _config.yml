@@ -15,6 +15,7 @@ show_drafts: false
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: assets/images/icons/siteicon.png
 description: CTI Context for AI Agents. The most important cyber threat intelligence knowledgebases accessible in a single platform.
+tagline: CTI context for analysts, engineers, and AI agents
 author:
   name: dogesec
 twitter:
@@ -28,6 +29,34 @@ social:
   name: 
   links:
     - 
+
+company_data:
+  name: dogesec
+  legal_name: dogesec
+  url: https://www.dogesec.com
+  logo: /assets/images/global/ctibutler-logo.png
+  same_as:
+    - https://github.com/muchdogesec
+    - https://www.linkedin.com/company/dogesec
+    - https://www.youtube.com/@muchdogesec
+
+product_data:
+  name: CTI Butler
+  category: Threat intelligence knowledge base platform
+  application_category: SecurityApplication
+  operating_system: Web browser
+  url: https://www.ctibutler.com
+  source_code_url: https://github.com/muchdogesec/ctibutler
+  documentation_url: https://docs.ctibutler.com
+  sign_up_url: https://app.ctibutler.com
+  api_reference_url: https://docs.ctibutler.com
+  description: CTI Butler gives teams and AI agents structured access to major cyber threat intelligence knowledge bases, linked context, and interoperable outputs through search, APIs, and standards-based exports.
+  feature_list:
+    - Unified access to major CTI knowledge bases
+    - Search and retrieval across ATT&CK, CAPEC, CWE, ATLAS, DISARM, and related datasets
+    - Technique inference and attack-path context
+    - Linked real-world context including reports, blogs, and vulnerabilities
+    - REST API, TAXII 2.1 API, STIX bundle export, and ATT&CK Navigator layers
     
     
 # -----
@@ -112,10 +141,7 @@ exclude:
 # -----------
 # CloudCannon
 
-# social_icons:
-#   - Instagram
-#   - Facebook
-#   - Twitter
+social_icons:
   - RSS
 
 # -----
