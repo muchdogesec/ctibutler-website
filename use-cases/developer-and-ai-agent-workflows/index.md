@@ -14,6 +14,13 @@ breadcrumbs:
     url: /use-cases/
   - name: Developer and AI Agent Workflows
     url: /use-cases/developer-and-ai-agent-workflows/
+related_links:
+  - title: Build AI-Ready Security Workflows
+    url: /solutions/build-ai-ready-security-workflows/
+  - title: CTI Research and Investigation
+    url: /use-cases/cti-research-and-investigation/
+  - title: REST API
+    url: /integrations/rest-api/
 ---
 ### Overview
 
@@ -38,12 +45,3 @@ That makes it a good retrieval layer for systems that need consistent CTI answer
 - AI assistants that can ground ATT&CK and related framework lookups
 - Internal enrichment or recommendation services
 - Workflow automation that reuses CTI Butler outputs in downstream tools
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/solutions/build-ai-ready-security-workflows/">Build AI-Ready Security Workflows</a></li>
-    <li><a href="/use-cases/cti-research-and-investigation/">CTI Research and Investigation</a></li>
-    <li><a href="/integrations/rest-api/">REST API</a></li>
-  </ul>
-</div>

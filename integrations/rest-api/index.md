@@ -14,6 +14,13 @@ breadcrumbs:
     url: /integrations/
   - name: REST API
     url: /integrations/rest-api/
+related_links:
+  - title: Developer and AI Agent Workflows
+    url: /use-cases/developer-and-ai-agent-workflows/
+  - title: Build AI-Ready Security Workflows
+    url: /solutions/build-ai-ready-security-workflows/
+  - title: What is CTI Butler?
+    url: /what-is-cti-butler/
 ---
 ### Overview
 
@@ -41,12 +48,3 @@ For many teams, this is the most direct way to embed CTI Butler into day-to-day 
 The REST API helps CTI Butler fit into existing engineering workflows while preserving structured CTI semantics.
 
 That matters because CTI Butler is most valuable when its outputs can be reused consistently. The REST API gives teams a predictable way to pull CTI context into custom tools without flattening it into ad hoc text.
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/use-cases/developer-and-ai-agent-workflows/">Developer and AI Agent Workflows</a></li>
-    <li><a href="/solutions/build-ai-ready-security-workflows/">Build AI-Ready Security Workflows</a></li>
-    <li><a href="/what-is-cti-butler/">What is CTI Butler?</a></li>
-  </ul>
-</div>

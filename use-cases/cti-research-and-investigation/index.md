@@ -14,6 +14,13 @@ breadcrumbs:
     url: /use-cases/
   - name: CTI Research and Investigation
     url: /use-cases/cti-research-and-investigation/
+related_links:
+  - title: Operationalise Connected CTI Knowledge
+    url: /solutions/operationalise-connected-threat-intelligence-knowledge/
+  - title: Threat Report Annotation and Enrichment
+    url: /use-cases/threat-report-annotation-and-enrichment/
+  - title: REST API
+    url: /integrations/rest-api/
 ---
 ### Overview
 
@@ -38,12 +45,3 @@ It is designed to make CTI research faster, clearer, and more reusable in the re
 - Faster analyst answers
 - Better context in investigations and writeups
 - More consistent references to standard CTI frameworks
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/solutions/operationalise-connected-threat-intelligence-knowledge/">Operationalise Connected CTI Knowledge</a></li>
-    <li><a href="/use-cases/threat-report-annotation-and-enrichment/">Threat Report Annotation and Enrichment</a></li>
-    <li><a href="/integrations/rest-api/">REST API</a></li>
-  </ul>
-</div>

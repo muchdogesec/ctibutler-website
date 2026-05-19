@@ -14,6 +14,13 @@ breadcrumbs:
     url: /integrations/
   - name: STIX Bundle Export
     url: /integrations/stix-bundle-export/
+related_links:
+  - title: Developer and AI Agent Workflows
+    url: /use-cases/developer-and-ai-agent-workflows/
+  - title: Connect Threat Intelligence Across Frameworks
+    url: /solutions/connect-threat-intelligence-across-frameworks/
+  - title: OpenCTI Integration
+    url: /integrations/opencti/
 ---
 ### Overview
 
@@ -38,12 +45,3 @@ Instead of manually copying framework details into another platform, users can e
 STIX bundle export reinforces CTI Butler's role as a CTI context and interoperability layer.
 
 It helps teams move from retrieval to operational use without losing the structure that makes the intelligence reusable.
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/use-cases/developer-and-ai-agent-workflows/">Developer and AI Agent Workflows</a></li>
-    <li><a href="/solutions/connect-threat-intelligence-across-frameworks/">Connect Threat Intelligence Across Frameworks</a></li>
-    <li><a href="/integrations/opencti/">OpenCTI Integration</a></li>
-  </ul>
-</div>

@@ -14,6 +14,13 @@ breadcrumbs:
     url: /solutions/
   - name: Build AI-Ready Security Workflows
     url: /solutions/build-ai-ready-security-workflows/
+related_links:
+  - title: Developer and AI Agent Workflows
+    url: /use-cases/developer-and-ai-agent-workflows/
+  - title: REST API
+    url: /integrations/rest-api/
+  - title: TAXII 2.1 API
+    url: /integrations/taxii-2-1-api/
 ---
 ### Overview
 
@@ -38,12 +45,3 @@ That gives teams a practical way to plug authoritative CTI context into code and
 - Agent workflows that query ATT&CK and related frameworks directly
 - Internal enrichment services that reuse CTI Butler as a context backend
 - Connected CTI outputs for downstream tools and reporting pipelines
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/use-cases/developer-and-ai-agent-workflows/">Developer and AI Agent Workflows</a></li>
-    <li><a href="/integrations/rest-api/">REST API</a></li>
-    <li><a href="/integrations/taxii-2-1-api/">TAXII 2.1 API</a></li>
-  </ul>
-</div>

@@ -14,6 +14,13 @@ breadcrumbs:
     url: /solutions/
   - name: Improve Detection and Hunting with CTI Context
     url: /solutions/improve-detection-and-hunting-with-cti-context/
+related_links:
+  - title: Attack Emulation and Coverage Validation
+    url: /use-cases/detection-engineering-and-coverage-validation/
+  - title: Attack Analysis and Technique Mapping
+    url: /use-cases/attack-analysis-and-technique-mapping/
+  - title: TAXII 2.1 API
+    url: /integrations/taxii-2-1-api/
 ---
 ### Overview
 
@@ -42,12 +49,3 @@ That makes CTI Butler helpful for both reactive and proactive work. A team can u
 - ATT&CK-driven enrichment for detection content
 - Coverage validation using likely predecessor and successor techniques
 - Faster movement from analyst clue to hunt hypothesis or attack-emulation path
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/use-cases/detection-engineering-and-coverage-validation/">Attack Emulation and Coverage Validation</a></li>
-    <li><a href="/use-cases/attack-analysis-and-technique-mapping/">Attack Analysis and Technique Mapping</a></li>
-    <li><a href="/integrations/taxii-2-1-api/">TAXII 2.1 API</a></li>
-  </ul>
-</div>

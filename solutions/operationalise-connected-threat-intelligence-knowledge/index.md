@@ -14,6 +14,13 @@ breadcrumbs:
     url: /solutions/
   - name: Operationalise Connected CTI Knowledge
     url: /solutions/operationalise-connected-threat-intelligence-knowledge/
+related_links:
+  - title: CTI Research and Investigation
+    url: /use-cases/cti-research-and-investigation/
+  - title: Attack Analysis and Technique Mapping
+    url: /use-cases/attack-analysis-and-technique-mapping/
+  - title: REST API
+    url: /integrations/rest-api/
 ---
 ### Overview
 
@@ -39,12 +46,3 @@ That means teams can move from "where do I find this?" to "how do I apply this?"
 - Standardised ATT&CK and CAPEC lookup during investigations
 - Faster context gathering for detections and hunting
 - Reusable exports for engineering, automation, and CTI tooling
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/use-cases/cti-research-and-investigation/">CTI Research and Investigation</a></li>
-    <li><a href="/use-cases/attack-analysis-and-technique-mapping/">Attack Analysis and Technique Mapping</a></li>
-    <li><a href="/integrations/rest-api/">REST API</a></li>
-  </ul>
-</div>

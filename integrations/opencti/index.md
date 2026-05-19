@@ -14,6 +14,16 @@ breadcrumbs:
     url: /integrations/
   - name: OpenCTI Integration
     url: /integrations/opencti/
+related_links:
+  - title: Connect Threat Intelligence Across Frameworks
+    url: /solutions/connect-threat-intelligence-across-frameworks/
+  - title: Developer and AI Agent Workflows
+    url: /use-cases/developer-and-ai-agent-workflows/
+  - title: TAXII 2.1 API
+    url: /integrations/taxii-2-1-api/
+  - title: OpenCTI CTI Butler connector
+    url: https://github.com/OpenCTI-Platform/connectors/tree/master/external-import/dogesec-ctibutler
+    new_window: true
 ---
 ### Overview
 
@@ -48,13 +58,3 @@ CTI Butler produces structured CTI that can be operationalised downstream. In th
 That distinction avoids a common mistake in product positioning. CTI Butler is valuable precisely because it feeds other systems cleanly rather than trying to masquerade as the entire destination platform.
 
 One important limitation from the current connector documentation is that this OpenCTI connector works with CTI Butler Web and does not currently support self-hosted CTI Butler installations. That is worth stating clearly so teams evaluating deployment options understand which product surface the integration depends on.
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/solutions/connect-threat-intelligence-across-frameworks/">Connect Threat Intelligence Across Frameworks</a></li>
-    <li><a href="/use-cases/developer-and-ai-agent-workflows/">Developer and AI Agent Workflows</a></li>
-    <li><a href="/integrations/taxii-2-1-api/">TAXII 2.1 API</a></li>
-    <li><a href="https://github.com/OpenCTI-Platform/connectors/tree/master/external-import/dogesec-ctibutler" target="_blank">OpenCTI CTI Butler connector</a></li>
-  </ul>
-</div>
