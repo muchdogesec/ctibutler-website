@@ -47,9 +47,9 @@ product_data:
   operating_system: Web browser
   url: https://www.ctibutler.com
   source_code_url: https://github.com/muchdogesec/ctibutler
-  documentation_url: https://docs.ctibutler.com
   sign_up_url: https://app.ctibutler.com
-  api_reference_url: https://docs.ctibutler.com
+  api_reference_url: https://api.ctibutler.com/schema/swagger-ui/
+  taxii_api_reference_url: https://taxii.ctibutler.com/schema/swagger-ui/
   description: CTI Butler gives teams and AI agents structured access to major cyber threat intelligence knowledge bases, linked context, and interoperable outputs through search, APIs, and standards-based exports.
   feature_list:
     - Unified access to major CTI knowledge bases
