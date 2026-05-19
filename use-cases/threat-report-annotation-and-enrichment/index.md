@@ -14,6 +14,13 @@ breadcrumbs:
     url: /use-cases/
   - name: Threat Report Annotation and Enrichment
     url: /use-cases/threat-report-annotation-and-enrichment/
+related_links:
+  - title: Reduce Manual CTI Research and Enrichment
+    url: /solutions/reduce-manual-cti-research-and-enrichment/
+  - title: CTI Research and Investigation
+    url: /use-cases/cti-research-and-investigation/
+  - title: REST API
+    url: /integrations/rest-api/
 ---
 ### Overview
 
@@ -39,12 +46,3 @@ That makes enrichment more consistent and easier to operationalise later.
 - Better-linked analyst reports
 - Faster enrichment of customer-facing intelligence
 - Cleaner reuse of CTI context in follow-on tooling
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/solutions/reduce-manual-cti-research-and-enrichment/">Reduce Manual CTI Research and Enrichment</a></li>
-    <li><a href="/use-cases/cti-research-and-investigation/">CTI Research and Investigation</a></li>
-    <li><a href="/integrations/rest-api/">REST API</a></li>
-  </ul>
-</div>

@@ -12,6 +12,13 @@ breadcrumbs:
     url: /
   - name: Integrations
     url: /integrations/
+related_links:
+  - title: Solutions
+    url: /solutions/
+  - title: Use Cases
+    url: /use-cases/
+  - title: What is CTI Butler?
+    url: /what-is-cti-butler/
 ---
 ### Overview
 
@@ -41,12 +48,3 @@ That matters because CTI Butler is deliberately positioned as a context, retriev
     <p>Bring CTI Butler’s structured knowledge bases into OpenCTI-oriented environments.</p>
   </li>
 </ul>
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/solutions/">Solutions</a></li>
-    <li><a href="/use-cases/">Use Cases</a></li>
-    <li><a href="/what-is-cti-butler/">What is CTI Butler?</a></li>
-  </ul>
-</div>

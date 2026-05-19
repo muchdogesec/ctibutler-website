@@ -12,6 +12,13 @@ breadcrumbs:
     url: /
   - name: What Is CTI Butler?
     url: /what-is-cti-butler/
+related_links:
+  - title: Browse CTI Butler solutions
+    url: /solutions/
+  - title: See workflow-led use cases
+    url: /use-cases/
+  - title: Explore integration options
+    url: /integrations/
 ---
 ### Overview
 
@@ -83,12 +90,3 @@ The product also includes the CTI Butler Inference Engine, or TIE. TIE helps use
 These outputs are important because they make CTI Butler interoperable by design. The product is not trying to trap CTI inside one interface. It is designed to help teams reuse structured knowledge across a wider operational workflow.
 
 That interoperability is also why CTI Butler fits well into modern engineering and AI-assisted workflows. It gives teams a stable CTI retrieval layer that can be reused across scripts, internal applications, analyst tooling, and downstream CTI platforms instead of being locked into one user interface.
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/solutions/">Browse CTI Butler solutions</a></li>
-    <li><a href="/use-cases/">See workflow-led use cases</a></li>
-    <li><a href="/integrations/">Explore integration options</a></li>
-  </ul>
-</div>

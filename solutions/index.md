@@ -12,6 +12,13 @@ breadcrumbs:
     url: /
   - name: Solutions
     url: /solutions/
+related_links:
+  - title: Use Cases
+    url: /use-cases/
+  - title: Integrations
+    url: /integrations/
+  - title: What is CTI Butler?
+    url: /what-is-cti-butler/
 ---
 ### Overview
 
@@ -45,12 +52,3 @@ For CTI Butler, those outcomes usually begin with a simple problem: the knowledg
     <p>Give internal tools and AI agents a grounded CTI retrieval layer through standards-based outputs and APIs.</p>
   </li>
 </ul>
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/use-cases/">Use Cases</a></li>
-    <li><a href="/integrations/">Integrations</a></li>
-    <li><a href="/what-is-cti-butler/">What is CTI Butler?</a></li>
-  </ul>
-</div>

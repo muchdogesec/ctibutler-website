@@ -14,6 +14,13 @@ breadcrumbs:
     url: /use-cases/
   - name: Attack Analysis and Technique Mapping
     url: /use-cases/attack-analysis-and-technique-mapping/
+related_links:
+  - title: Improve Detection and Hunting with CTI Context
+    url: /solutions/improve-detection-and-hunting-with-cti-context/
+  - title: Attack Emulation and Coverage Validation
+    url: /use-cases/detection-engineering-and-coverage-validation/
+  - title: TAXII 2.1 API
+    url: /integrations/taxii-2-1-api/
 ---
 ### Overview
 
@@ -37,12 +44,3 @@ CTI Butler combines structured framework access with connected context and expor
 - Better-supported ATT&CK mappings
 - Faster context gathering during incident analysis
 - Reusable structured exports for follow-on workflow
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/solutions/improve-detection-and-hunting-with-cti-context/">Improve Detection and Hunting with CTI Context</a></li>
-    <li><a href="/use-cases/detection-engineering-and-coverage-validation/">Attack Emulation and Coverage Validation</a></li>
-    <li><a href="/integrations/taxii-2-1-api/">TAXII 2.1 API</a></li>
-  </ul>
-</div>

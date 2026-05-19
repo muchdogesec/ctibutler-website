@@ -14,6 +14,13 @@ breadcrumbs:
     url: /solutions/
   - name: Connect Threat Intelligence Across Frameworks
     url: /solutions/connect-threat-intelligence-across-frameworks/
+related_links:
+  - title: Attack Analysis and Technique Mapping
+    url: /use-cases/attack-analysis-and-technique-mapping/
+  - title: Developer and AI Agent Workflows
+    url: /use-cases/developer-and-ai-agent-workflows/
+  - title: OpenCTI Integration
+    url: /integrations/opencti/
 ---
 ### Overview
 
@@ -38,12 +45,3 @@ That makes it useful for workflows where users need to understand how concepts r
 - Pivoting from ATT&CK techniques to related attack patterns and weaknesses
 - Building richer context around incidents and detections
 - Feeding connected CTI into graph-oriented or standards-based systems
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/use-cases/attack-analysis-and-technique-mapping/">Attack Analysis and Technique Mapping</a></li>
-    <li><a href="/use-cases/developer-and-ai-agent-workflows/">Developer and AI Agent Workflows</a></li>
-    <li><a href="/integrations/opencti/">OpenCTI Integration</a></li>
-  </ul>
-</div>

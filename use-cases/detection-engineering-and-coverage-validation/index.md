@@ -14,6 +14,13 @@ breadcrumbs:
     url: /use-cases/
   - name: Attack Emulation and Coverage Validation
     url: /use-cases/detection-engineering-and-coverage-validation/
+related_links:
+  - title: Improve Detection and Hunting with CTI Context
+    url: /solutions/improve-detection-and-hunting-with-cti-context/
+  - title: Attack Analysis and Technique Mapping
+    url: /use-cases/attack-analysis-and-technique-mapping/
+  - title: TAXII 2.1 API
+    url: /integrations/taxii-2-1-api/
 ---
 ### Overview
 
@@ -39,12 +46,3 @@ Instead of stopping at one mapped technique, teams can use CTI Butler to build o
 - Better-grounded attack-emulation paths
 - More useful ATT&CK-driven hunt design
 - Improved confidence in coverage validation across the wider attack chain
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/solutions/improve-detection-and-hunting-with-cti-context/">Improve Detection and Hunting with CTI Context</a></li>
-    <li><a href="/use-cases/attack-analysis-and-technique-mapping/">Attack Analysis and Technique Mapping</a></li>
-    <li><a href="/integrations/taxii-2-1-api/">TAXII 2.1 API</a></li>
-  </ul>
-</div>

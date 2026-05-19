@@ -22,6 +22,16 @@ layout: default
 				</div>
 			{% endif %}
 			{{ content }}
+			{% if page.related_links %}
+				<div class="related-links">
+					<h3>Related Links</h3>
+					<ul>
+						{% for link in page.related_links %}
+							<li><a href="{{ link.url }}"{% if link.new_window %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+			{% endif %}
 		</div>
 	</section>
 </div>

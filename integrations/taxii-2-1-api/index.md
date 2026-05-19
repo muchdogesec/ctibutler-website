@@ -14,6 +14,13 @@ breadcrumbs:
     url: /integrations/
   - name: TAXII 2.1 API
     url: /integrations/taxii-2-1-api/
+related_links:
+  - title: Attack Emulation and Coverage Validation
+    url: /use-cases/detection-engineering-and-coverage-validation/
+  - title: Operationalise Connected CTI Knowledge
+    url: /solutions/operationalise-connected-threat-intelligence-knowledge/
+  - title: OpenCTI Integration
+    url: /integrations/opencti/
 ---
 ### Overview
 
@@ -40,12 +47,3 @@ This is especially relevant for teams that already have CTI infrastructure built
 TAXII 2.1 makes CTI Butler easier to fit into broader CTI ecosystems that already expect standards-driven transport and update models.
 
 It also makes the product easier to position correctly. CTI Butler remains the context source and delivery layer, while the downstream platform remains the place where that content is further operationalised.
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/use-cases/detection-engineering-and-coverage-validation/">Attack Emulation and Coverage Validation</a></li>
-    <li><a href="/solutions/operationalise-connected-threat-intelligence-knowledge/">Operationalise Connected CTI Knowledge</a></li>
-    <li><a href="/integrations/opencti/">OpenCTI Integration</a></li>
-  </ul>
-</div>

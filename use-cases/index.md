@@ -12,6 +12,13 @@ breadcrumbs:
     url: /
   - name: Use Cases
     url: /use-cases/
+related_links:
+  - title: Solutions
+    url: /solutions/
+  - title: Integrations
+    url: /integrations/
+  - title: What is CTI Butler?
+    url: /what-is-cti-butler/
 ---
 ### Overview
 
@@ -45,12 +52,3 @@ CTI Butler is especially strong in workflows where a team needs to start from on
     <p>Use CTI Butler as a retrieval layer for internal tooling, automations, and agentic workflows.</p>
   </li>
 </ul>
-
-<div class="related-links">
-  <h3>Related Links</h3>
-  <ul>
-    <li><a href="/solutions/">Solutions</a></li>
-    <li><a href="/integrations/">Integrations</a></li>
-    <li><a href="/what-is-cti-butler/">What is CTI Butler?</a></li>
-  </ul>
-</div>
