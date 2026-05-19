@@ -67,8 +67,6 @@ At a workflow level, a user usually starts with a known object, clue, or questio
 
 The product also includes the CTI Butler Inference Engine, or TIE. TIE helps users connect limited information to likely attacker behavior across past, present, and future stages of an attack. That makes it useful for directing hunts, building attack-emulation paths, and validating whether coverage reflects the wider behavior sequence rather than just one ATT&CK label.
 
-There is also an important distinction between CTI Butler Web and the open-source CTI Butler project. The open-source project is the core code and API. CTI Butler Web is the hosted web layer built on top of that API. That distinction matters when discussing integrations, deployment, and connector support.
-
 ### Standards, Outputs, and Integrations
 
 - STIX 2.1 data model
@@ -76,7 +74,6 @@ There is also an important distinction between CTI Butler Web and the open-sourc
 - REST API access
 - STIX bundle export
 - ATT&CK Navigator layer export
-- OpenCTI integration workflows
 
 These outputs are important because they make CTI Butler interoperable by design. The product is not trying to trap CTI inside one interface. It is designed to help teams reuse structured knowledge across a wider operational workflow.
 
