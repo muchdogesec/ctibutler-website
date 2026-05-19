@@ -56,7 +56,7 @@ product_data:
     - Search and retrieval across ATT&CK, CAPEC, CWE, ATLAS, DISARM, and related datasets
     - Technique inference and attack-path context
     - Linked real-world context including reports, blogs, and vulnerabilities
-    - REST API, TAXII 2.1 API, STIX bundle export, and ATT&CK Navigator layers
+    - REST API, TAXII API, STIX bundle export, and ATT&CK Navigator layers
     
     
 # -----

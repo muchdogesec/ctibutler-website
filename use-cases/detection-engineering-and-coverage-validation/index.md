@@ -19,8 +19,8 @@ related_links:
     url: /solutions/improve-detection-and-hunting-with-cti-context/
   - title: Attack Analysis and Technique Mapping
     url: /use-cases/attack-analysis-and-technique-mapping/
-  - title: TAXII 2.1 API
-    url: /integrations/taxii-2-1-api/
+  - title: TAXII API
+    url: /integrations/taxii-api/
 ---
 ### Overview
 
