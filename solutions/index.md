@@ -1,6 +1,11 @@
 ---
 title: CTI Butler Solutions
 description: Outcome-led pages showing how CTI Butler helps teams operationalise connected CTI knowledge, improve detections, reduce manual work, and support automation.
+author: dogesec
+image: /assets/images/global/ctibutler-attack.png
+sitemap: true
+excluded_in_search: false
+permalink: /solutions/
 featured_image: /assets/images/global/ctibutler-attack.png
 breadcrumbs:
   - name: Home

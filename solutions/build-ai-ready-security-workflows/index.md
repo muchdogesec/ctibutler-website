@@ -1,6 +1,11 @@
 ---
 title: Build AI-Ready Security Workflows
 description: Give automations, internal applications, and AI agents grounded access to structured CTI context with CTI Butler.
+author: dogesec
+image: /assets/images/global/ctibutler-api.png
+sitemap: true
+excluded_in_search: false
+permalink: /solutions/build-ai-ready-security-workflows/
 featured_image: /assets/images/global/ctibutler-api.png
 breadcrumbs:
   - name: Home

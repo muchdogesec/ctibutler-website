@@ -1,6 +1,11 @@
 ---
 title: Connect Threat Intelligence Across Frameworks
 description: Use CTI Butler to move across ATT&CK, CAPEC, CWE, ATLAS, DISARM, and linked context without treating each framework as an isolated island.
+author: dogesec
+image: /assets/images/global/ctibutler-endpoints.png
+sitemap: true
+excluded_in_search: false
+permalink: /solutions/connect-threat-intelligence-across-frameworks/
 featured_image: /assets/images/global/ctibutler-endpoints.png
 breadcrumbs:
   - name: Home

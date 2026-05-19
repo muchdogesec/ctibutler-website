@@ -1,6 +1,11 @@
 ---
 title: Reduce Manual CTI Research and Enrichment
 description: Use CTI Butler to cut repetitive framework lookups, make enrichment more consistent, and speed up CTI analysis across reports, detections, and investigations.
+author: dogesec
+image: /assets/images/global/ctibutler-object.png
+sitemap: true
+excluded_in_search: false
+permalink: /solutions/reduce-manual-cti-research-and-enrichment/
 featured_image: /assets/images/global/ctibutler-object.png
 breadcrumbs:
   - name: Home

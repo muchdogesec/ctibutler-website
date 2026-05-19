@@ -1,6 +1,11 @@
 ---
 title: CTI Butler REST API
 description: Use the CTI Butler REST API to retrieve structured CTI context for applications, automations, analyst tooling, and AI workflows.
+author: dogesec
+image: /assets/images/global/ctibutler-api.png
+sitemap: true
+excluded_in_search: false
+permalink: /integrations/rest-api/
 featured_image: /assets/images/global/ctibutler-api.png
 breadcrumbs:
   - name: Home

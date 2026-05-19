@@ -1,6 +1,11 @@
 ---
 title: CTI Butler Use Cases
 description: Workflow-led pages showing how CTI Butler supports attack analysis, CTI research, enrichment, attack emulation, coverage validation, and developer workflows.
+author: dogesec
+image: /assets/images/global/ctibutler-object.png
+sitemap: true
+excluded_in_search: false
+permalink: /use-cases/
 featured_image: /assets/images/global/ctibutler-object.png
 breadcrumbs:
   - name: Home

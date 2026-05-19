@@ -1,6 +1,11 @@
 ---
 title: CTI Butler Integrations
 description: Learn how CTI Butler integrates with your workflow through REST, TAXII 2.1, STIX bundle export, and OpenCTI-oriented interoperability paths.
+author: dogesec
+image: /assets/images/global/ctibutler-api.png
+sitemap: true
+excluded_in_search: false
+permalink: /integrations/
 featured_image: /assets/images/global/ctibutler-api.png
 breadcrumbs:
   - name: Home

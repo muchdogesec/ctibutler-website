@@ -1,6 +1,11 @@
 ---
 title: CTI Butler STIX Bundle Export
 description: Use CTI Butler STIX bundle export to move structured CTI objects and relationships into downstream tools, storage layers, and analyst workflows.
+author: dogesec
+image: /assets/images/global/ctibutler-endpoints.png
+sitemap: true
+excluded_in_search: false
+permalink: /integrations/stix-bundle-export/
 featured_image: /assets/images/global/ctibutler-endpoints.png
 breadcrumbs:
   - name: Home

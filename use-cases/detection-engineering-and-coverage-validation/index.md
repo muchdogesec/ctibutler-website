@@ -1,6 +1,11 @@
 ---
 title: Attack Emulation and Coverage Validation
 description: Use CTI Butler's Inference Engine to connect limited information to likely attacker behavior, support attack emulation, and validate coverage across the wider attack path.
+author: dogesec
+image: /assets/images/global/ctibutler-attack.png
+sitemap: true
+excluded_in_search: false
+permalink: /use-cases/detection-engineering-and-coverage-validation/
 featured_image: /assets/images/global/ctibutler-attack.png
 breadcrumbs:
   - name: Home
