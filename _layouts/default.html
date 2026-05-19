@@ -73,6 +73,25 @@
 		<script>
 			const navToggle = document.getElementById("open-nav");
 			const submenuToggles = document.querySelectorAll(".submenu-toggle");
+			const desktopNavQuery = window.matchMedia("(min-width: 620px)");
+
+			function closeSubmenus() {
+				document.querySelectorAll(".nav-item.submenu-open").forEach(function (item) {
+					item.classList.remove("submenu-open");
+					const button = item.querySelector(".submenu-toggle");
+					if (button) {
+						button.setAttribute("aria-expanded", "false");
+					}
+				});
+			}
+
+			function resetDesktopNavState() {
+				if (desktopNavQuery.matches) {
+					document.body.classList.remove("nav-open");
+					closeSubmenus();
+				}
+			}
+
 			navToggle.onclick = function () {
 				document.body.classList.toggle("nav-open");
 				return false;
@@ -81,30 +100,23 @@
 				toggle.addEventListener("click", function () {
 					const parent = this.closest(".nav-item");
 					const isOpen = parent.classList.contains("submenu-open");
-					document.querySelectorAll(".nav-item.submenu-open").forEach(function (item) {
-						if (item !== parent) {
-							item.classList.remove("submenu-open");
-							const button = item.querySelector(".submenu-toggle");
-							if (button) {
-								button.setAttribute("aria-expanded", "false");
-							}
-						}
-					});
+					closeSubmenus();
 					parent.classList.toggle("submenu-open", !isOpen);
 					this.setAttribute("aria-expanded", String(!isOpen));
 				});
 			});
 			document.addEventListener("click", function (event) {
 				if (!event.target.closest(".site-nav")) {
-					document.querySelectorAll(".nav-item.submenu-open").forEach(function (item) {
-						item.classList.remove("submenu-open");
-						const button = item.querySelector(".submenu-toggle");
-						if (button) {
-							button.setAttribute("aria-expanded", "false");
-						}
-					});
+					closeSubmenus();
 				}
 			});
+			window.addEventListener("resize", resetDesktopNavState);
+			if (desktopNavQuery.addEventListener) {
+				desktopNavQuery.addEventListener("change", resetDesktopNavState);
+			} else if (desktopNavQuery.addListener) {
+				desktopNavQuery.addListener(resetDesktopNavState);
+			}
+			resetDesktopNavState();
 		</script>
 		<script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
 		<script src="/assets/js/popper.min.js"></script>
