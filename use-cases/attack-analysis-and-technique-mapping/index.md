@@ -19,8 +19,8 @@ related_links:
     url: /solutions/improve-detection-and-hunting-with-cti-context/
   - title: Attack Emulation and Coverage Validation
     url: /use-cases/detection-engineering-and-coverage-validation/
-  - title: TAXII 2.1 API
-    url: /integrations/taxii-2-1-api/
+  - title: TAXII API
+    url: /integrations/taxii-api/
 ---
 ### Overview
 

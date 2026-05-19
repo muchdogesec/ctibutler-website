@@ -52,8 +52,8 @@
     - name: REST API
       link: /integrations/rest-api/
       new_window: false
-    - name: TAXII 2.1 API
-      link: /integrations/taxii-2-1-api/
+    - name: TAXII API
+      link: /integrations/taxii-api/
       new_window: false
     - name: STIX Bundle Export
       link: /integrations/stix-bundle-export/

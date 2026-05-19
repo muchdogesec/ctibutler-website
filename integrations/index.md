@@ -1,6 +1,6 @@
 ---
 title: CTI Butler Integrations
-description: Learn how CTI Butler integrates with your workflow through REST, TAXII 2.1, STIX bundle export, and OpenCTI-oriented interoperability paths.
+description: Learn how CTI Butler integrates with your workflow through REST, TAXII, STIX bundle export, and OpenCTI-oriented interoperability paths.
 author: dogesec
 image: /assets/images/global/ctibutler-api.png
 sitemap: true
@@ -36,7 +36,7 @@ That matters because CTI Butler is deliberately positioned as a context, retriev
     <p>Use CTI Butler programmatically for structured lookups, exports, and workflow integration.</p>
   </li>
   <li>
-    <strong><a href="/integrations/taxii-2-1-api/">TAXII 2.1 API</a></strong>
+    <strong><a href="/integrations/taxii-api/">TAXII API</a></strong>
     <p>Deliver CTI Butler content into standards-based CTI tooling and collection-driven workflows.</p>
   </li>
   <li>

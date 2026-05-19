@@ -73,7 +73,7 @@ In practice, that means CTI Butler often becomes the product teams reach for whe
 
 CTI Butler ingests structured threat intelligence knowledge bases, exposes them through a unified interface, and links them into a more connected graph of context.
 
-Users can work with that graph through the web application, the REST API, TAXII 2.1 collections, STIX bundle exports, and downstream connectors.
+Users can work with that graph through the web application, the REST API, TAXII collections, STIX bundle exports, and downstream connectors.
 
 At a workflow level, a user usually starts with a known object, clue, or question. CTI Butler then acts as the retrieval layer that makes the surrounding context available in a form that can be read, searched, exported, or integrated elsewhere.
 
@@ -82,7 +82,7 @@ The product also includes the CTI Butler Inference Engine, or TIE. TIE helps use
 ### Standards, Outputs, and Integrations
 
 - STIX 2.1 data model
-- TAXII 2.1 API access
+- TAXII API access
 - REST API access
 - STIX bundle export
 - ATT&CK Navigator layer export

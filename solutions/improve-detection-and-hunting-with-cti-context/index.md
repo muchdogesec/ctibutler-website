@@ -19,8 +19,8 @@ related_links:
     url: /use-cases/detection-engineering-and-coverage-validation/
   - title: Attack Analysis and Technique Mapping
     url: /use-cases/attack-analysis-and-technique-mapping/
-  - title: TAXII 2.1 API
-    url: /integrations/taxii-2-1-api/
+  - title: TAXII API
+    url: /integrations/taxii-api/
 ---
 ### Overview
 

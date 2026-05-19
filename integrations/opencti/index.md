@@ -19,8 +19,8 @@ related_links:
     url: /solutions/connect-threat-intelligence-across-frameworks/
   - title: Developer and AI Agent Workflows
     url: /use-cases/developer-and-ai-agent-workflows/
-  - title: TAXII 2.1 API
-    url: /integrations/taxii-2-1-api/
+  - title: TAXII API
+    url: /integrations/taxii-api/
   - title: OpenCTI CTI Butler connector
     url: https://github.com/OpenCTI-Platform/connectors/tree/master/external-import/dogesec-ctibutler
     new_window: true

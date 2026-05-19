@@ -1,19 +1,19 @@
 ---
-title: CTI Butler TAXII 2.1 API
-description: Use the CTI Butler TAXII 2.1 API to deliver structured CTI content into standards-based tooling and downstream collection workflows.
+title: CTI Butler TAXII API
+description: Use the CTI Butler TAXII API to deliver structured CTI content into standards-based tooling and downstream collection workflows.
 author: dogesec
 image: /assets/images/global/ctibutler-endpoints.png
 sitemap: true
 excluded_in_search: false
-permalink: /integrations/taxii-2-1-api/
+permalink: /integrations/taxii-api/
 featured_image: /assets/images/global/ctibutler-endpoints.png
 breadcrumbs:
   - name: Home
     url: /
   - name: Integrations
     url: /integrations/
-  - name: TAXII 2.1 API
-    url: /integrations/taxii-2-1-api/
+  - name: TAXII API
+    url: /integrations/taxii-api/
 related_links:
   - title: Attack Emulation and Coverage Validation
     url: /use-cases/detection-engineering-and-coverage-validation/
@@ -24,7 +24,7 @@ related_links:
 ---
 ### Overview
 
-The CTI Butler TAXII 2.1 API provides a standards-based way to access CTI Butler content in workflows that already rely on TAXII collections and CTI tooling.
+The CTI Butler TAXII API provides a standards-based way to access CTI Butler content in workflows that already rely on TAXII collections and CTI tooling.
 
 It is designed for interoperability-first environments where machine-readable delivery matters as much as analyst usability.
 
@@ -44,6 +44,6 @@ This is especially relevant for teams that already have CTI infrastructure built
 
 ### Interoperability
 
-TAXII 2.1 makes CTI Butler easier to fit into broader CTI ecosystems that already expect standards-driven transport and update models.
+TAXII makes CTI Butler easier to fit into broader CTI ecosystems that already expect standards-driven transport and update models.
 
 It also makes the product easier to position correctly. CTI Butler remains the context source and delivery layer, while the downstream platform remains the place where that content is further operationalised.

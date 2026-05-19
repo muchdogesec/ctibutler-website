@@ -19,8 +19,8 @@ related_links:
     url: /use-cases/developer-and-ai-agent-workflows/
   - title: REST API
     url: /integrations/rest-api/
-  - title: TAXII 2.1 API
-    url: /integrations/taxii-2-1-api/
+  - title: TAXII API
+    url: /integrations/taxii-api/
 ---
 ### Overview
 
@@ -36,7 +36,7 @@ CTI Butler provides a structured retrieval layer that helps those workflows stay
 
 ### Why Teams Use CTI Butler for This
 
-CTI Butler exposes structured CTI through REST, TAXII 2.1, STIX bundle exports, and other integration paths that fit naturally into modern automation.
+CTI Butler exposes structured CTI through REST, TAXII, STIX bundle exports, and other integration paths that fit naturally into modern automation.
 
 That gives teams a practical way to plug authoritative CTI context into code and agent workflows.
 
