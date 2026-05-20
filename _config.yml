@@ -121,7 +121,6 @@ plugins:
   - jekyll-archives
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-feed
   - jekyll-paginate
   - jekyll-redirect-from
 
