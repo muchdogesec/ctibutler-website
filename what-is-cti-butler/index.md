@@ -12,13 +12,6 @@ breadcrumbs:
     url: /
   - name: What Is CTI Butler?
     url: /what-is-cti-butler/
-related_links:
-  - title: Browse CTI Butler solutions
-    url: /solutions/
-  - title: See workflow-led use cases
-    url: /use-cases/
-  - title: Explore integration options
-    url: /integrations/
 ---
 ### Overview
 
