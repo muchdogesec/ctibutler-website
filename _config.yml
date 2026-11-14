@@ -9,23 +9,15 @@ baseurl:
 future: false
 show_drafts: false
 
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: assets/images/icons/siteicon.png
 description: CTI Context for AI Agents. The most important cyber threat intelligence knowledgebases accessible in a single platform.
 tagline: CTI context for analysts, engineers, and AI agents
+og_image: /assets/images/global/og-image.png
 author:
   name: dogesec
-twitter:
-    username: 
-    card: summary
-social:
-  name: 
-  links:
-    - 
 
 company_data:
   name: dogesec
-  legal_name: dogesec
+  legal_name: Do Only Good Everyday Security
   url: https://www.dogesec.com
   logo: /assets/images/global/doge-outline-pink-bg.png
   same_as:
@@ -37,7 +29,7 @@ product_data:
   name: CTI Butler
   application_category: SecurityApplication
   operating_system: Web browser
-  application_sub_category: Structured Threat Intelligence Extraction
+  application_sub_category: Cyber Threat Intelligence Knowledge Base Platform
   url: https://www.ctibutler.com
   source_code_url: https://github.com/muchdogesec/ctibutler
   sign_up_url: https://app.ctibutler.com
@@ -75,7 +67,6 @@ defaults:
       layout: "default"
 plugins:
   - jekyll-sitemap
-  - jekyll-seo-tag
   - jekyll-redirect-from
 
 exclude:

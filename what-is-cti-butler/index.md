@@ -1,6 +1,6 @@
 ---
 title: What Is CTI Butler?
-description: CTI Butler is a structured CTI context platform that gives analysts, engineers, and AI agents access to major cyber threat intelligence knowledge bases through search, APIs, and interoperable outputs.
+description: CTI Butler gives analysts, engineers and AI agents access to major cyber threat intelligence knowledge bases through search, APIs and interoperable outputs.
 author: dogesec
 image: /assets/images/global/ctibutler-object.png
 sitemap: true

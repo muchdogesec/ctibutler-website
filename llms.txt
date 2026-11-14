@@ -1,0 +1,29 @@
+---
+layout: null
+sitemap: false
+permalink: /llms.txt
+---
+{%- assign pd = site.product_data -%}
+{%- assign what_is = site.pages | where_exp: "p", "p.url contains '/what-is-'" | first -%}
+{%- assign pricing_page = site.pages | where: "url", "/pricing/" | first -%}
+# {{ site.title }}
+
+> {{ pd.description }}
+
+{{ site.title }} is built by {{ site.company_data.name }} ({{ site.company_data.url }}).
+
+## Pages
+- [Home]({{ "/" | absolute_url }}): {{ site.description }}
+{% if what_is %}- [{{ what_is.title }}]({{ what_is.url | absolute_url }}): {{ what_is.description }}
+{% endif %}{% if pricing_page %}- [Pricing]({{ "/pricing/" | absolute_url }}): {{ pricing_page.description }}
+{% endif %}
+{% if pd.feature_list %}## Features
+{% for f in pd.feature_list %}- {{ f }}
+{% endfor %}
+{% endif %}## Product and developer links
+- [Sign up / open the app]({{ pd.sign_up_url }})
+{% if pd.api_reference_url %}- [REST API reference]({{ pd.api_reference_url }})
+{% endif %}{% if pd.taxii_api_reference_url %}- [TAXII 2.1 API reference]({{ pd.taxii_api_reference_url }})
+{% endif %}{% if pd.source_code_url %}- [Source code on GitHub]({{ pd.source_code_url }})
+{% endif %}- [Support portal](https://support.dogesec.com/)
+- [dogesec blog]({{ site.company_data.url }}/blog/)
