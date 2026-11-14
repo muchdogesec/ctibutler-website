@@ -4,9 +4,6 @@
 title: CTI Butler
 url: "https://www.ctibutler.com"
 baseurl: 
-google_analytics_key: 
-# google_maps_javascript_api_key:
-# disqus_shortname: 
 
 # Do not publish future blog posts or drafts
 future: false
@@ -21,10 +18,6 @@ author:
 twitter:
     username: 
     card: summary
-facebook:
-    app_id:
-    publisher:
-    admins: 
 social:
   name: 
   links:
@@ -69,34 +62,7 @@ kramdown:
 
 timezone: "Europe/London"
 
-collections:
-  staff_members:
-    _hide_content: true
-
-paginate: 10
-paginate_path: "/blog/:num/"
-permalink: "/blog/:title/"
-
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      _options:
-        content:
-          width: 1500
-          height: 2500
-  -
-    scope:
-      path: ""
-      type: "staff_members"
-    values:
-      _options:
-        image_path:
-          width: 600
-          height: 600
   -
     scope:
       path: ""
@@ -107,21 +73,9 @@ defaults:
       path: "index.html"
     values:
       layout: "default"
-  -
-    scope:
-      path: "contact.html"
-    values:
-      full_width: true
-
-jekyll-archives:
-  enabled:
-    - categories
-
 plugins:
-  - jekyll-archives
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate
   - jekyll-redirect-from
 
 exclude:
@@ -137,20 +91,3 @@ exclude:
   - package-lock.json
   - node_modules
 
-# -----------
-# CloudCannon
-
-social_icons:
-  - RSS
-
-# -----
-# _comments:
-# map: Update the map location and display settings.
-# latitude: Coordinates for the center marker on the map.
-# longitude: Coordinates for the center marker on the map.
-# zoom: The zoom level for the map.
-# pricing_table: Update the information in the pricing tables.
-# highlight: Emphasis the text
-# color: The background colour used in the plan name and call to action.
-# new_window: Open link in new window
-# -----
