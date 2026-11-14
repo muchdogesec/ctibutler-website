@@ -9,7 +9,6 @@
 		{% include structured-data.html %}
 
 		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css">
-		<link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
 		<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
@@ -54,10 +53,7 @@
 						<h2>{{ column.heading }}</h2>
 						<ul class="footer-links">
 							{% for link in column.links %}
-								<li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
-									{% if link.social_icon %}
-										{% include social-icon.html icon=link.social_icon %}
-									{% endif %}
+								<li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}">
 									{{ link.name }}</a></li>
 							{% endfor %}
 						</ul>
@@ -118,9 +114,6 @@
 			}
 			resetDesktopNavState();
 		</script>
-		<script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
-		<script src="/assets/js/popper.min.js"></script>
-		<script src="/assets/js/bootstrap.min.js"></script>
 		<script src="/assets/js/cookieconsent.min.js"></script>
     	<script src="/assets/js/product-videos.js"></script>
 

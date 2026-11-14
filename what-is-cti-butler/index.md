@@ -12,6 +12,24 @@ breadcrumbs:
     url: /
   - name: What Is CTI Butler?
     url: /what-is-cti-butler/
+redirect_from:
+  - /integrations/
+  - /integrations/opencti/
+  - /integrations/rest-api/
+  - /integrations/stix-bundle-export/
+  - /integrations/taxii-api/
+  - /solutions/
+  - /solutions/build-ai-ready-security-workflows/
+  - /solutions/connect-threat-intelligence-across-frameworks/
+  - /solutions/improve-detection-and-hunting-with-cti-context/
+  - /solutions/operationalise-connected-threat-intelligence-knowledge/
+  - /solutions/reduce-manual-cti-research-and-enrichment/
+  - /use-cases/
+  - /use-cases/attack-analysis-and-technique-mapping/
+  - /use-cases/cti-research-and-investigation/
+  - /use-cases/detection-engineering-and-coverage-validation/
+  - /use-cases/developer-and-ai-agent-workflows/
+  - /use-cases/threat-report-annotation-and-enrichment/
 ---
 ### Overview
 
