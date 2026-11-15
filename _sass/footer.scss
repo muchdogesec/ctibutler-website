@@ -64,6 +64,26 @@ footer {
 		text-align: center;
 	}
 
+	.footer-social {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+		margin: 14px 0 0 0;
+		padding: 0;
+		list-style: none;
+
+		a {
+			display: block;
+			line-height: 0;
+		}
+
+		svg {
+			width: 20px;
+			height: 20px;
+			fill: currentColor;
+		}
+	}
+
 	a {
 		text-decoration: none;
 
