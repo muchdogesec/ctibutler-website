@@ -32,17 +32,19 @@ product_data:
   operating_system: Web browser
   application_sub_category: Cyber Threat Intelligence Knowledge Base Platform
   url: https://www.ctibutler.com
-  source_code_url: https://github.com/muchdogesec/ctibutler
   sign_up_url: https://app.ctibutler.com
   api_reference_url: https://api.ctibutler.com/schema/swagger-ui/
   taxii_api_reference_url: https://taxii.ctibutler.com/schema/swagger-ui/
+  mcp_url: https://mcp.ctibutler.com/mcp
+  mcp_setup_prompt_url: https://mcp.ctibutler.com/setup-prompt/prompt.md
   description: CTI Butler gives teams and AI agents structured access to major cyber threat intelligence knowledge bases, linked context, and interoperable outputs through search, APIs, and standards-based exports.
   feature_list:
     - Unified access to major CTI knowledge bases
     - Search and retrieval across ATT&CK, CAPEC, CWE, ATLAS, DISARM, and related datasets
     - Technique inference and attack-path context
     - Linked real-world context including reports, blogs, and vulnerabilities
-    - REST API, TAXII API, STIX bundle export, and ATT&CK Navigator layers
+    - Connect AI agents such as Claude, Codex, Cursor and VS Code over MCP
+    - REST API, TAXII 2.1 API, official OpenCTI connector, STIX bundle export, and ATT&CK Navigator layers
     
     
 # -----

@@ -20,10 +20,11 @@ permalink: /llms.txt
 {% if pd.feature_list %}## Features
 {% for f in pd.feature_list %}- {{ f }}
 {% endfor %}
-{% endif %}## Product and developer links
+{% endif %}## Product, API and AI agent links
 - [Sign up / open the app]({{ pd.sign_up_url }})
 {% if pd.api_reference_url %}- [REST API reference]({{ pd.api_reference_url }})
 {% endif %}{% if pd.taxii_api_reference_url %}- [TAXII 2.1 API reference]({{ pd.taxii_api_reference_url }})
-{% endif %}{% if pd.source_code_url %}- [Source code on GitHub]({{ pd.source_code_url }})
+{% endif %}{% if pd.mcp_url %}- [MCP server for AI agents]({{ pd.mcp_url }})
+{% endif %}{% if pd.mcp_setup_prompt_url %}- [MCP setup prompt for AI agents]({{ pd.mcp_setup_prompt_url }})
 {% endif %}- [Support portal](https://support.dogesec.com/)
 - [dogesec blog]({{ site.company_data.url }}/blog/)
