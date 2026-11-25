@@ -41,15 +41,14 @@ CTI Butler should be understood as a CTI retrieval, context, and interoperabilit
 
 That distinction matters. CTI Butler does not aim to be the system where every piece of operational intelligence work is managed. Its value is in making widely used CTI knowledge easier to retrieve, easier to connect, and easier to move into the systems where analysis, sharing, detection engineering, and automation already happen.
 
-For buyers and technical evaluators, the shortest useful framing is this: CTI Butler is a product for working with major cyber threat intelligence knowledge bases from one place. It gives analysts, detection engineers, developers, and AI agents a consistent way to search, retrieve, export, and operationalise structured CTI data without hopping across multiple sources and formats.
+For buyers and technical evaluators, the shortest useful framing is this: CTI Butler is a product for working with major cyber threat intelligence knowledge bases from one place. It gives analysts, detection engineers, and AI agents a consistent way to search, retrieve, export, and operationalise structured CTI data without hopping across multiple sources and formats.
 
 ### Who CTI Butler Is For
 
 - CTI analysts
 - Detection and hunting teams
 - Security engineers
-- Developers building security tooling
-- AI agent workflows that need grounded CTI retrieval
+- AI agents that need grounded CTI retrieval, connected over MCP
 
 ### What Problem It Solves
 
@@ -84,7 +83,7 @@ In practice, that means CTI Butler often becomes the product teams reach for whe
 
 CTI Butler ingests structured threat intelligence knowledge bases, exposes them through a unified interface, and links them into a more connected graph of context.
 
-Users can work with that graph through the web application, the REST API, TAXII collections, STIX bundle exports, and downstream connectors.
+Users can work with that graph through the web application, the MCP server, the REST API, TAXII collections, STIX bundle exports, and the official OpenCTI connector.
 
 At a workflow level, a user usually starts with a known object, clue, or question. CTI Butler then acts as the retrieval layer that makes the surrounding context available in a form that can be read, searched, exported, or integrated elsewhere.
 
@@ -93,8 +92,10 @@ The product also includes the CTI Butler Inference Engine, or TIE. TIE helps use
 ### Standards, Outputs, and Integrations
 
 - STIX 2.1 data model
-- TAXII API access
+- MCP server for AI agents such as Claude, Codex, Cursor and VS Code
+- TAXII 2.1 API access
 - REST API access
+- Official OpenCTI connector
 - STIX bundle export
 - ATT&CK Navigator layer export
 
